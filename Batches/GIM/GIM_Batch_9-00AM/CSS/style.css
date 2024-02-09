@@ -1,0 +1,10 @@
+h2{
+    color: chartreuse;
+    background-color: coral;
+    text-align: center;
+}
+div{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}

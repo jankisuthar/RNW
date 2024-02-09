@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="myslct" onchange="test()">
+        <option value="India">India</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+    </select>
+    <h1 id="demo"></h1>
+</body>
+</html>
+<script>
+    function test()
+    {
+        let a = document.getElementById('myslct').value;
+        // alert(a)
+        document.getElementById('demo').innerHTML = "You have selected "+a
+    }
+</script>

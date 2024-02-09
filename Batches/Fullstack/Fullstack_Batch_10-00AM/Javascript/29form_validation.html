@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return Valid_data()" name="form">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>gender:</td>
+                <td><input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby:</td>
+                <td><input type="checkbox" name="chk" value="cricket">cricket
+                <input type="checkbox" name="chk" value="ludo">ludo
+                </td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function Valid_data()
+    {
+        let name = document.getElementById('name').value
+        if(name == "")
+        {
+            alert("Please Enter Name!");
+            document.getElementById('name').focus();
+            return false;
+        }
+        let email = document.getElementById('email').value
+        if(email == "")
+        {
+            alert("Please Enter Email!");
+            document.getElementById('email').focus();
+            return false;
+        }
+        let pwd = document.getElementById('pwd').value
+        if(pwd == "")
+        {
+            alert("Please Enter Password!");
+            document.getElementById('pwd').focus();
+            return false;
+        }
+        if((form.gender[0].checked==false) && (form.gender[1].checked==false))
+        {
+            alert("Please select gender!");
+            return false;
+        }
+        if((form.chk[0].checked==false) && (form.chk[1].checked==false))
+        {
+            alert("Please select Hobby!");
+            return false;
+        }
+        let date = document.getElementById('date').value
+        if(date == "")
+        {
+            alert("Please select date!");
+            document.getElementById('date').focus();
+            return false;
+        }
+    }
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            position: relative;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            /* padding: 20px; */
+            display: none;
+            
+          
+        }
+        .one:hover .two{
+            display: block;
+            transform: scale(1.2)
+        }
+        .one img:hover{
+            transform: scale(1.1);
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <img src="https://c4.wallpaperflare.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg" alt="">
+
+        <div class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellat tempora facilis alias voluptatem ullam et beatae est, eligendi deleniti suscipit, quidem aliquid, labore doloribus tenetur obcaecati perspiciatis accusantium molestiae!</div>
+    </div>
+    
+</body>
+</html>

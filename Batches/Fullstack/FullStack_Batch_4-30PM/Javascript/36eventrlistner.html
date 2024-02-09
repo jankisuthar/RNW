@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Hello Javascript</h1>
+    <!-- <button onclick="test()">click me</button> -->
+    <button id="first">click me</button>
+    <button id="second">click me</button>
+    <button id="third">click me</button>
+</body>
+</html>
+<script>
+// document.getElementById('one').style.color="white";
+// document.getElementById('one').style.backgroundColor="teal"
+// document.getElementById('one').style.textAlign="center"
+
+
+//first way
+// function test(){
+//     document.getElementById('one').style.color="white";
+//     document.getElementById('one').style.backgroundColor="teal";
+// }
+// test() ;
+//second way
+// document.querySelector('#first').addEventListener('click',function(){
+    document.getElementById('first').addEventListener('click',function(){
+    document.getElementById('one').style.color="green";
+    document.getElementById('one').style.backgroundColor="yellow"
+document.getElementById('one').style.textAlign="center"
+})
+
+//second button
+document.querySelector('#second').addEventListener('click',function(){
+     document.getElementById('one').style.border='2px solid';
+})
+</script>

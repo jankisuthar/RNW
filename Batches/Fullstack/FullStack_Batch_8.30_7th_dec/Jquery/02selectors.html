@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>Good Morning</h1>
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus dolorum corporis facere mollitia aspernatur distinctio, officiis, veritatis culpa aut hic officia dicta reprehenderit assumenda. Totam nihil labore recusandae nam?</p>
+    <span id="test">This is inline element</span>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //element selector
+        // $('h1').css('color','red')
+        $('h1').css({'color':'red','background':'grey','textAlign':'center'})
+
+
+        //class selector
+        $('.one').css({'fontSize':'20px'})
+
+        //Id selector
+        $('#test').css({'color':'blue','fontSize':'50px','textAlign':'center','display':'block'})
+    })
+</script>

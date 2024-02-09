@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test">This is DOM Element</h1>
+    <button onclick="demo()">Click me to Change the Style</button>
+    <br>  <br>  <br>
+    <div id="one"></div>
+    <br>
+    <button id="btn">Click</button>
+</body>
+</html>
+<script>
+    document.getElementById('test').innerText = "DOM = Document Object Model";
+    document.getElementById('test').style.color="red"
+ 
+
+    function demo()
+    {
+        document.getElementById('test').style.backgroundColor="yellow";
+        document.getElementById('test').style.textAlign="center"
+    }
+
+    let btn = document.getElementById('btn')
+
+    btn.addEventListener('click',function(){
+        document.getElementById('one').style.height="200px";
+        document.getElementById('one').style.width="200px";
+        document.getElementById('one').style.backgroundColor="blue"
+    })
+    
+</script>

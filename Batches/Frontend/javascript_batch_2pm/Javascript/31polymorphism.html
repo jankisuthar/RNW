@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class A{
+        student(){
+            console.log("He is a student");
+        }
+    }
+    class B extends A{
+        student(){
+            console.log("He is a class Monitor");
+        }
+    }
+    class C extends B{
+        student(){
+            console.log("He is Dance mantor");
+        } 
+    }
+    let ob = new A;
+    let ob2  = new B;
+    let ob3 = new C;
+    ob.student();
+    ob2.student();
+    ob3.student();
+</script>

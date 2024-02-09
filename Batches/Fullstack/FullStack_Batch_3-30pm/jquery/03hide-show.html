@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis esse cum quod illo temporibus? Est nisi, optio expedita dolorum id distinctio illo reprehenderit quos excepturi molestias. Consectetur itaque necessitatibus ipsum sunt optio laudantium quaerat, quam consequatur pariatur voluptate dolorem modi reiciendis adipisci at aperiam asperiores nostrum! Ratione molestiae odit nulla temporibus, eos ipsa iste recusandae explicabo quo? Sapiente, praesentium animi? Voluptates natus sit assumenda adipisci dolore beatae accusantium quis eum cupiditate, recusandae voluptatem cumque ut ipsam molestias corrupti reiciendis nostrum impedit, rem ipsa optio inventore, atque iste cum. Nobis asperiores iste soluta ullam quos, dicta inventore quo maxime provident possimus perspiciatis, vero eligendi incidunt itaque quia at nostrum! Vel adipisci quasi voluptas illo assumenda rem iure alias debitis ipsam natus quisquam, recusandae odio perferendis inventore cum, vitae, fuga voluptate nisi? Esse nostrum laboriosam placeat deserunt accusamus id ducimus velit numquam explicabo, laudantium earum dolores quae porro nihil possimus libero odio voluptatem necessitatibus perspiciatis alias impedit quas voluptatum, distinctio et! Minus laboriosam quos soluta, tempore voluptas excepturi unde vitae consequuntur! Obcaecati laudantium maxime optio id odit officiis, enim iusto mollitia numquam quo, libero quaerat commodi debitis consequatur consectetur ex voluptatibus. Minus odio quas provident laboriosam nulla suscipit praesentium dolor veniam?</p>
+    <button class="hide">click me to hide</button>
+    <br>
+    <p id="two" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis esse cum quod illo temporibus? Est nisi, optio expedita dolorum id distinctio illo reprehenderit quos excepturi molestias. Consectetur itaque necessitatibus ipsum sunt optio laudantium quaerat, quam consequatur pariatur voluptate dolorem modi reiciendis adipisci at aperiam asperiores nostrum! Ratione molestiae odit nulla temporibus, eos ipsa iste recusandae explicabo quo? Sapiente, praesentium animi? Voluptates natus sit assumenda adipisci dolore beatae accusantium quis eum cupiditate, recusandae voluptatem cumque ut ipsam molestias corrupti reiciendis nostrum impedit, rem ipsa optio inventore, atque iste cum. Nobis asperiores iste soluta ullam quos, dicta inventore quo maxime provident possimus perspiciatis, vero eligendi incidunt itaque quia at nostrum! Vel adipisci quasi voluptas illo assumenda rem iure alias debitis ipsam natus quisquam, recusandae odio perferendis inventore cum, vitae, fuga voluptate nisi? Esse nostrum laboriosam placeat deserunt accusamus id ducimus velit numquam explicabo, laudantium earum dolores quae porro nihil possimus libero odio voluptatem necessitatibus perspiciatis alias impedit quas voluptatum, distinctio et! Minus laboriosam quos soluta, tempore voluptas excepturi unde vitae consequuntur! Obcaecati laudantium maxime optio id odit officiis, enim iusto mollitia numquam quo, libero quaerat commodi debitis consequatur consectetur ex voluptatibus. Minus odio quas provident laboriosam nulla suscipit praesentium dolor veniam?</p>
+    <button class="show">click me to show</button>
+    <br>
+    <p id="three" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis esse cum quod illo temporibus? Est nisi, optio expedita dolorum id distinctio illo reprehenderit quos excepturi molestias. Consectetur itaque necessitatibus ipsum sunt optio laudantium quaerat, quam consequatur pariatur voluptate dolorem modi reiciendis adipisci at aperiam asperiores nostrum! Ratione molestiae odit nulla temporibus, eos ipsa iste recusandae explicabo quo? Sapiente, praesentium animi? Voluptates natus sit assumenda adipisci dolore beatae accusantium quis eum cupiditate, recusandae voluptatem cumque ut ipsam molestias corrupti reiciendis nostrum impedit, rem ipsa optio inventore, atque iste cum. Nobis asperiores iste soluta ullam quos, dicta inventore quo maxime provident possimus perspiciatis, vero eligendi incidunt itaque quia at nostrum! Vel adipisci quasi voluptas illo assumenda rem iure alias debitis ipsam natus quisquam, recusandae odio perferendis inventore cum, vitae, fuga voluptate nisi? Esse nostrum laboriosam placeat deserunt accusamus id ducimus velit numquam explicabo, laudantium earum dolores quae porro nihil possimus libero odio voluptatem necessitatibus perspiciatis alias impedit quas voluptatum, distinctio et! Minus laboriosam quos soluta, tempore voluptas excepturi unde vitae consequuntur! Obcaecati laudantium maxime optio id odit officiis, enim iusto mollitia numquam quo, libero quaerat commodi debitis consequatur consectetur ex voluptatibus. Minus odio quas provident laboriosam nulla suscipit praesentium dolor veniam?</p>
+    <button class="toggle">click me to Hide/show</button>
+    <br>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //hide
+        $('.hide').click(function(){
+            $('#one').hide(2000)
+        })
+
+        //show
+        $('.show').click(function(){
+            $('#two').show(2000)
+        })
+
+        //toggle
+        $('.toggle').click(function(){
+            $('#three').toggle(2000)
+        })
+    })
+</script>

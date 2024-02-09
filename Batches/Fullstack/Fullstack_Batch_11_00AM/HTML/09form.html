@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <table border="1" align="center">
+            <caption><b>Register Form</b></caption>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" placeholder="Enter Your name " required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" ></textarea></td>
+            </tr>
+            <tr>
+                <td>Languages:</td>
+                <td><input type="checkbox" name="chk">Gujarati
+                    <input type="checkbox" name="chk">Hindi
+                    <input type="checkbox" name="chk">English
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Image:</td>
+                <td><input type="file" name="img"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><select name="country" >
+                    <option value="">India</option>
+                    <option value="">UK</option>
+                    <option value="">Canada</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Color:</td>
+                <td><input type="color" name="clr"></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Tel:</td>
+                <td><input type="tel" name="tel" pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>Range:</td>
+                <td><input type="range" name="range"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Register">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

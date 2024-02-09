@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties</title>
+    <style>
+        body{
+            background-image: url('img/bg2.jpg');
+            /* background-blend-mode: darken; */
+            /* background-blend-mode: lighten; */
+            /* background-blend-mode:saturation; */
+            /* background-blend-mode:soft-light; */
+            /* background-blend-mode:hard-light; */
+          
+            background-color: blueviolet;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-size: contain; */
+            background-attachment: fixed;
+            /* background-attachment: scroll; */
+        }
+        h1{
+            background-color: red;
+            padding: 20px;
+            margin: 50px;
+        }
+        .one
+        {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            /* background: linear-gradient(45deg,red,green,blue,yellow,black); */
+            background: linear-gradient(to left,red,green,blue,yellow,black);
+        }
+        .two
+        {
+            height: 200px;
+            width: 200px;
+            border: 10px dotted;
+            /* border-radius: 50%; */
+            background:radial-gradient(red,yellow,green,blue,black);
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            background: conic-gradient(red,green,blue);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Good Morning!</h1>
+    <div class="one"></div>
+    <br><br>
+    <div class="two"></div>
+    <br><br>
+    <div class="three"></div>
+    <br><br>
+    <div class="four"></div>
+</body>
+</html>

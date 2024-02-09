@@ -1,0 +1,11 @@
+h1{
+    color: bisque;
+    background-color: black;
+    text-align: center;
+}
+div{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    color: red;
+}

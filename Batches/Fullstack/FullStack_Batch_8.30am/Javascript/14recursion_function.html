@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Recursion : function call itself called recursion
+    // function Demo(number)
+    // {
+    //     console.log(number);
+    //     let newnumber = 0
+    //     if(newnumber>number-1)
+    //     {
+    //         console.log(Demo(newnumber))
+    //     }
+    // }
+    // Demo(5)
+
+
+
+    // nestead function
+    // function outer(){
+    //     console.log("Hello");
+    //     a = 5
+    //     function inner(){
+
+    //         console.log(a);
+    //         console.log("Good Morning!");
+    //     }
+    //     inner()
+    // }
+    // outer()
+
+    // IIFE = imediate invoked function expression
+
+    // (function(){
+    //     console.log("This is IIFE Function");
+    // })
+    // ()
+
+    // closure : inner function has all the access to use outer function's all the functionality
+
+    function Counter(){
+        let count = 0
+        function Inner()
+        {
+         return count+=1
+        }
+        return Inner
+    }
+   
+   let data = Counter()
+   console.log(data());
+   console.log(data());
+   console.log(data());
+   console.log(data());
+   console.log(data());
+
+ 
+</script>

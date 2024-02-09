@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" onblur="ValidData(this,'nameerror')" onkeyup="NameValid(this,'nerror')">
+            <span id="nameerror"></span>
+            <span id="nerror"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" id="pwd" onblur="ValidData(this,'pwderror')" onkeyup="PwdValid(this,'perror')">
+                <span id="pwderror"></span>
+                <span id="perror"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="email" onblur="ValidData(this,'emailerror')" onkeyup="EmailValid(this,'eerror')">
+                <span id="emailerror"></span>
+                <span id="eerror"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="text" id="mobile" onblur="ValidData(this,'mobileerror')" onkeyup="MobileValid(this,'merror')">
+                <span id="mobileerror"></span>
+                <span id="merror"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="submit"></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="data.js"></script>

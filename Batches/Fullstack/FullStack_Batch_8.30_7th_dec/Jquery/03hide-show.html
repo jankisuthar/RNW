@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempore dolores dolorem culpa suscipit iste laborum temporibus sunt similique ab fugiat aut facilis ratione repudiandae fugit nam, atque nulla fuga magnam! Aspernatur eveniet quis libero iusto sed. Hic numquam tempore consectetur ipsam repellendus in magnam officiis nisi vero, voluptatibus doloremque dolorem totam maiores exercitationem debitis amet? Veniam a eligendi ut delectus. Eos corrupti atque sunt unde consectetur dolor ratione fuga quae, earum velit! Ad, mollitia veritatis ut dicta soluta facilis aliquid maiores libero nihil architecto temporibus adipisci neque maxime eligendi vitae nostrum, iusto ullam placeat, ab cum impedit reprehenderit ducimus aliquam! Saepe praesentium exercitationem neque explicabo nisi iusto labore quos facilis laudantium. Similique nobis in ad placeat necessitatibus distinctio nam illo ut! A sint omnis optio explicabo, reiciendis laboriosam voluptas, velit illum excepturi vitae animi ipsam quam vero quas necessitatibus consequuntur alias laudantium iste temporibus placeat maiores itaque aut harum doloremque? Iure repellat ullam nam consequatur voluptates nulla iste tempora vero! Perferendis ad earum ut exercitationem, fugiat beatae autem, saepe adipisci, molestiae magnam distinctio. Incidunt ipsum quasi repellendus nam excepturi magni ducimus hic cum quia, quidem sed, dolor facere nobis dolorum fugiat perferendis. Voluptatem temporibus autem sapiente natus itaque illo.</p>
+    <button id="hide">Click me to hide</button>
+    <br>
+    <p class="two" style="display: none;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempore dolores dolorem culpa suscipit iste laborum temporibus sunt similique ab fugiat aut facilis ratione repudiandae fugit nam, atque nulla fuga magnam! Aspernatur eveniet quis libero iusto sed. Hic numquam tempore consectetur ipsam repellendus in magnam officiis nisi vero, voluptatibus doloremque dolorem totam maiores exercitationem debitis amet? Veniam a eligendi ut delectus. Eos corrupti atque sunt unde consectetur dolor ratione fuga quae, earum velit! Ad, mollitia veritatis ut dicta soluta facilis aliquid maiores libero nihil architecto temporibus adipisci neque maxime eligendi vitae nostrum, iusto ullam placeat, ab cum impedit reprehenderit ducimus aliquam! Saepe praesentium exercitationem neque explicabo nisi iusto labore quos facilis laudantium. Similique nobis in ad placeat necessitatibus distinctio nam illo ut! A sint omnis optio explicabo, reiciendis laboriosam voluptas, velit illum excepturi vitae animi ipsam quam vero quas necessitatibus consequuntur alias laudantium iste temporibus placeat maiores itaque aut harum doloremque? Iure repellat ullam nam consequatur voluptates nulla iste tempora vero! Perferendis ad earum ut exercitationem, fugiat beatae autem, saepe adipisci, molestiae magnam distinctio. Incidunt ipsum quasi repellendus nam excepturi magni ducimus hic cum quia, quidem sed, dolor facere nobis dolorum fugiat perferendis. Voluptatem temporibus autem sapiente natus itaque illo.</p>
+    <button id="show">Click me to Show</button>
+    <br><br>
+    <p class="three" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro tempore dolores dolorem culpa suscipit iste laborum temporibus sunt similique ab fugiat aut facilis ratione repudiandae fugit nam, atque nulla fuga magnam! Aspernatur eveniet quis libero iusto sed. Hic numquam tempore consectetur ipsam repellendus in magnam officiis nisi vero, voluptatibus doloremque dolorem totam maiores exercitationem debitis amet? Veniam a eligendi ut delectus. Eos corrupti atque sunt unde consectetur dolor ratione fuga quae, earum velit! Ad, mollitia veritatis ut dicta soluta facilis aliquid maiores libero nihil architecto temporibus adipisci neque maxime eligendi vitae nostrum, iusto ullam placeat, ab cum impedit reprehenderit ducimus aliquam! Saepe praesentium exercitationem neque explicabo nisi iusto labore quos facilis laudantium. Similique nobis in ad placeat necessitatibus distinctio nam illo ut! A sint omnis optio explicabo, reiciendis laboriosam voluptas, velit illum excepturi vitae animi ipsam quam vero quas necessitatibus consequuntur alias laudantium iste temporibus placeat maiores itaque aut harum doloremque? Iure repellat ullam nam consequatur voluptates nulla iste tempora vero! Perferendis ad earum ut exercitationem, fugiat beatae autem, saepe adipisci, molestiae magnam distinctio. Incidunt ipsum quasi repellendus nam excepturi magni ducimus hic cum quia, quidem sed, dolor facere nobis dolorum fugiat perferendis. Voluptatem temporibus autem sapiente natus itaque illo.</p>
+    <button id="toggle">Click me to Hide/Show</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //hide
+        $('#hide').click(function(){
+            $('.one').hide(1000)
+        })
+         //show
+         $('#show').click(function(){
+            $('.two').show(2000)
+        })
+        //toggle
+        $('#toggle').click(function(){
+            $('.three').toggle(2000)
+        })
+    })
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // built-in constructor
+    let a = new Array("Apple","Orange","Kiwi")
+    console.log(a);
+    let o = new Object(5)
+    console.log(o);
+    let d = new Date()
+    console.log(d);
+    let y = new Date().getFullYear()
+    console.log(y);
+
+    function MyFunc(name,age)
+    {
+        this.name = name
+        this.age = age
+    }
+    let ob = new MyFunc("john doe",25)
+    console.log(ob);
+    console.log(ob.name+" "+ob.age);
+</script>                                                                                                                                    

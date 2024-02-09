@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+        }
+        .demo{
+            background-color: aqua;
+        }
+        .test
+        {
+            border: 2px solid red;
+            background-color: bisque;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button class="one">Click</button>
+    <br>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia modi voluptas rem quibusdam iure, minus sit, sunt deleniti, exercitationem doloremque quia aliquam? Similique earum, aliquid animi eum non, voluptas saepe optio maxime atque officia facere deleniti cum iste mollitia at soluta! Commodi quaerat reprehenderit excepturi. Cumque commodi earum expedita assumenda laborum! Dignissimos earum voluptatem assumenda, itaque eos laudantium asperiores quam accusantium sapiente repudiandae animi dolorum odit voluptate inventore nisi necessitatibus omnis tenetur. Quam quibusdam praesentium esse et sunt! A neque tempore sint consectetur ipsam nobis sequi sunt! Enim porro nostrum similique impedit, possimus quisquam temporibus eaque obcaecati. Explicabo, illum quos.</p>
+    <button class="two">Remove CSS</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //addclass
+        $('.one').click(function(){
+            $('div').addClass('demo');
+        })
+        //removeclass
+        // $('.two').click(function(){
+        //     $('p').removeClass('test');
+        // })
+        // toggleclass
+        $('.two').click(function(){
+            $('p').toggleClass('test');
+        })
+    })
+</script>

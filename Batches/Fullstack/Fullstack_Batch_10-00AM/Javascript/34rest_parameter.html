@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Rest Parameter : The rest parameter syntax allows us to represent an infinite number of arguments as an array. With the help of a rest parameter a function can be called with any number of arguments, no matter how it was defined.
+
+    function Demo(...Data)
+    {
+        let sum = 1;
+        for(let i of Data)
+        {
+            sum*=i
+        }
+        return sum;
+
+    }
+    console.log(Demo(2,2));
+    console.log(Demo(2,2,4));
+    console.log(Demo(2,2,4,5 ));
+</script>

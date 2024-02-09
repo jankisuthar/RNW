@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="demo"></h1>
+</body>
+</html>
+<script>
+   
+    const data=async()=>{
+       let a = new Promise((resolve,reject)=>{
+        // resolve("Hello world")
+        let a = 10
+        let b = 10
+        if(a<b)
+        {
+            resolve("true")
+        }
+        else{
+            reject("false")
+        }
+       }).catch((error)=>{
+        console.log(error);
+       })
+
+        document.getElementById('demo').innerHTML = await a;
+    }
+    data()
+</script>

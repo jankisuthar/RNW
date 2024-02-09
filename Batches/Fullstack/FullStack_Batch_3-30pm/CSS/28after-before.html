@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after{
+            content: ' CSS Class';
+            color: red;
+            border-bottom: 2px solid;
+        }
+        h1::before{
+            content: 'Welcome ';
+            color: red;
+            border-bottom: 2px solid;
+        }
+        .one{
+            height: 400px;
+            width: 400px;
+            background-color: brown;
+            color: blanchedalmond;
+            padding: 20px;
+            transition: ease transform;
+            transition-duration: 1s;
+            transition-delay: 1s;
+        
+        
+        }
+        .one:hover{
+            transform: rotateY(180deg);
+          
+        }
+        .outer{
+            height: 300px;
+            width: 400px;
+            border:1px solid;
+           
+            perspective: 100px;
+            background-color: transparent;
+        }
+        .outer img{
+            height: 300px;
+            width: 400px;
+            transition: transform ;
+        
+        }
+        .outer:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>to the Class!</h1>
+    <br>
+    <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora placeat voluptatem a alias quod aliquid, perferendis ut quia, magni eveniet, quibusdam ullam perspiciatis asperiores saepe fugit neque? Necessitatibus eveniet perferendis sequi vel recusandae culpa quidem tenetur asperiores at quaerat sapiente soluta ratione odio, hic laboriosam voluptatum eligendi in omnis amet totam voluptatem. Dicta vel dolores, eaque doloribus officiis amet! Molestias perspiciatis id molestiae nulla iusto unde qui, eveniet facilis. Maxime, excepturi aut natus vel doloremque iure eum illo saepe, expedita velit sint nemo. Culpa alias voluptatem molestiae maxime voluptatibus praesentium et sapiente blanditiis, optio tempora perspiciatis cupiditate impedit non!</div>
+<br><br>
+    <div class="outer">
+        <img src="img/nature.jpg" alt="nature">
+    </div>
+</body>
+</html>

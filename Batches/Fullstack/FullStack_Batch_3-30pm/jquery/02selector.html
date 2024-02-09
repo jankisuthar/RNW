@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>Good Afternoon</h1>
+    <p class="demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro id sit amet itaque obcaecati atque quis expedita cumque nulla quaerat mollitia blanditiis repellendus, exercitationem at eos dolorem adipisci nobis earum molestias repellat vitae! Itaque, esse! Consequatur corrupti nesciunt velit error accusantium, doloribus impedit mollitia cupiditate dignissimos itaque quos sunt eveniet obcaecati fugiat iste voluptatibus, qui laboriosam ipsa dolor id minus! Quisquam ex odit est magni quia laborum, minima enim mollitia dolorum quae optio unde sapiente eaque inventore eum. Repellat error sint voluptatum dolores commodi, qui totam harum impedit numquam atque sit reprehenderit tempore explicabo nobis excepturi et, animi quia nam.</p>
+    <span id="test">This is inline Element</span>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        // Element selector
+        // $('h1').css('color','red')
+        $('h1').css({'color':'green','background':'grey','textAlign':'center'})
+
+        //class selector
+        $('.demo').css({'border':'2px solid','padding':'10px','color':'blue'})
+
+        //id selector
+        $('#test').css({'fontSize':'25px','display':'block','textAlign':'center'})
+    })
+</script>

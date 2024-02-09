@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // function : function is a block of code
+    function Test()
+    {
+        console.log("Good MOrning");
+    }
+    Test();
+
+    //function with para
+    function Name(fname,lname)
+    {
+        console.log("My first name  is ",fname);
+        console.log("My last name  is ",lname);
+    }
+    Name("John","Doe")
+
+    //function with default para
+    function Prsn(country = "India")
+    {
+        console.log("My country name is ",country);
+    }
+    // Prsn()
+    Prsn("Canada")
+
+    //return
+    function Addition(x,y)
+    {
+        let sum = x+y
+        return sum;
+    }
+    console.log("Sum of two values are",Addition(4,5));
+
+    //nestead function
+    function Customer(name)
+    {
+        console.log("My name is ",name);
+        function prsn(age)
+        {
+            console.log("My age is ",age);
+        }
+        prsn(35)
+    }
+    Customer("John")
+
+
+    //recursion : function call it self called recursion
+
+    function Test(number)
+    {
+            console.log(number);
+            let newnumber = number-1
+              
+            if(newnumber>0)
+            {
+                Test(newnumber) 
+            }        
+    }
+    Test(5)
+</script>

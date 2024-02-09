@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr = [100,110,16];
+
+    function data(arr)
+    {
+        return arr > 18;
+    }
+    // data(arr)
+
+   console.log(arr.filter(data));
+
+   arr.map((res)=>{
+    console.log(res);
+   })
+
+
+   function totaladta(total,num)
+   {
+    return total-num;
+   }
+   console.log(arr.reduce(totaladta));
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            background-color: grey;
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            height: 500px;
+        }
+        .main div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        .one{background-color: aqua;}
+        .two{background-color: black;align-self: center;}
+        .three{background-color: bisque;}
+        .four{background-color: blue;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one" style="order: 3;">1</div>
+        <div class="two" style="order: 1;">2</div>
+        <div class="three" style="order: 4;">3</div>
+        <div class="four" style="order: 2;">4</div>
+    </div>
+</body>
+</html>

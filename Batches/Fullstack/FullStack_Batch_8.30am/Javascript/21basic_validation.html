@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" onsubmit="return ValidData()" name="form">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" id="gender" value="male">Male
+                    <input type="radio" name="gender" id="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby:</td>
+                <td><input type="checkbox" name="hoby" value="cricket" id="hobby">Cricket
+                    <input type="checkbox" name="hoby" value="chess" id="hobby">Chess
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script src="validate.js"></script>

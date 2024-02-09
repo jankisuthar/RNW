@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 5px solid;
+            margin: 100px;
+        }
+        .demo
+        {
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .one
+        {
+            border: 2px solid red;
+            padding: 20px;
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <button class="add">AddClass</button>
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime reiciendis illo itaque est magni magnam explicabo hic alias! Hic quia itaque magnam quis impedit expedita totam corrupti nobis fugiat commodi illo porro natus aut repellat consectetur dolore veritatis perferendis nulla voluptas, aliquam nostrum. Similique assumenda nulla autem. Quasi ipsam, iusto nam accusamus eum placeat dolorem ad suscipit quibusdam assumenda laborum, labore accusantium iure alias corrupti deserunt nobis voluptatem nihil quae tenetur. Laboriosam ut numquam repellat ratione hic amet? Vero itaque ullam non, eum iure sit suscipit molestias cupiditate a iusto corrupti, dolorum enim quae ea, nostrum facilis expedita tempora.</p>
+    <button class="remove">Remove Class</button>
+
+    <button class="toggle">Toggle Class</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //add class
+        $('.add').click(function(){
+            $('div').addClass('demo');
+        })
+
+        //remove class
+        $('.remove').click(function(){
+            $('p').removeClass('one');
+        })
+
+        //toggle class
+        $('.toggle').click(function(){
+            $('div').toggleClass('demo');
+        })
+    })
+</script>

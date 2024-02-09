@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: red;
+        }
+        div>p{
+            color: green;
+        }
+        div+p{
+            background-color: yellow;
+        }
+        div~p{
+            background-color: blue;
+        }
+        p:first-child{
+            border: 2px solid;
+        }
+        p:last-child{
+            border: 5px solid red;
+        }
+        p:nth-child(3)
+        {
+            background-color: aqua;
+        }
+        p:nth-last-child(2)
+        {
+            background-color: black;
+            color: white;
+        }
+        p::first-letter{
+        font-size: 50px;
+        color: coral;
+        }
+        p::first-line{
+            background-color: deeppink;
+        }
+        div::selection{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, quasi neque, ipsam facilis autem, consequuntur quidem officiis at dicta eveniet accusantium voluptatem fugit consectetur itaque quod quaerat magnam rem assumenda.</p>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt alias, maiores minima illum dolor recusandae placeat qui laboriosam veritatis cum velit ea expedita ducimus tenetur. Ex amet saepe incidunt consequuntur maiores pariatur praesentium atque maxime sint. Nisi quo ipsam quas ratione velit facilis possimus cumque expedita necessitatibus facere pariatur dolorum sapiente, perferendis ullam in aspernatur ex aperiam sunt praesentium optio illo harum ad assumenda autem. Molestiae id magni libero iusto ipsam saepe. Id exercitationem consequuntur nobis adipisci fuga expedita? Necessitatibus voluptatum libero eveniet exercitationem, earum ipsum recusandae eum vel nihil illum eaque omnis porro, qui quidem est mollitia dolores esse soluta impedit atque. Rerum quaerat nemo recusandae aspernatur possimus. Aut at numquam accusantium repellat cumque unde, voluptatibus doloribus. Mollitia minima molestiae harum, qui aspernatur eveniet accusamus, voluptatem cumque quisquam necessitatibus ad eos obcaecati, praesentium alias! Consequatur repudiandae voluptate molestiae harum veritatis doloribus labore enim tempore dicta. Ipsam cumque expedita blanditiis assumenda quod dolor eveniet minima. In hic iure nesciunt voluptatem officiis, mollitia magni totam obcaecati itaque commodi asperiores neque ea quisquam velit odio minus ipsam harum ratione! Ut ex iusto, veritatis officia perspiciatis distinctio nam sint mollitia illo at numquam! Dolorum explicabo sapiente cumque facere voluptatum doloribus quae vitae!
+        <p>This is inside the div element</p>
+        <p>hello</p>
+    </div>
+    <p>Good Morning</p>
+    <p>Have a nice day</p>
+</body>
+</html>

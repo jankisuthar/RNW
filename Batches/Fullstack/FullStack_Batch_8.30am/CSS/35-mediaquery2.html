@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="600px.css">
+    <link rel="stylesheet" href="768px.css">
+    <link rel="stylesheet" href="992px.css">
+    <style>
+        @media only screen and (min-width:1200px) {
+            .main{
+                width: 100%;
+                background-color: grey;
+               padding: 50px 0px 50px 0px;
+                display: flex;
+                justify-content: space-around;
+              
+            }
+            .main div{
+                height: 200px;
+                width: 200px;
+                
+            }
+            .one{
+                background-color: aqua;
+            }
+            .two{background-color: blue;}
+            .three{background-color: blueviolet;}
+            .four{background-color: brown;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+</body>
+</html>

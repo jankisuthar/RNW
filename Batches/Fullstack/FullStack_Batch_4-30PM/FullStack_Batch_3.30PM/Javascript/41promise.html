@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let Mypro = new Promise((resolve,reject)=>{
+        let a = 10
+        let b = 10
+
+        if(a == b)
+        {
+            resolve("success")
+        }
+        else{
+            reject("Not match")
+        }
+    })
+    .then((res)=>{
+        console.log(res);
+    }).catch((Error)=>{
+        console.log(Error);
+    })
+   
+</script>

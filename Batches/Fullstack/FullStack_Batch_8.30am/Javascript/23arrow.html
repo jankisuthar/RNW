@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //old way
+    function Test(){
+        console.log("This is Test method");
+    }
+    Test();
+
+    const Data = function(){
+        console.log("This is Data Method");
+    }
+    Data()
+
+    //with arrow
+    const Arrow=()=>console.log("This is Arrow Method");
+    Arrow()
+
+    //with para
+    const Person=(fname,lname)=>{
+        console.log("My First Name is "+fname+" and last name is "+lname);
+    }
+    Person("John","Doe")
+</script>

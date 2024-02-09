@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="" value="Hello Class!" onselect="slct()">
+    <button onclick="clck()">Click Me</button>
+    <select name="" id="fruits" onchange="chng()">
+        <option value="Apple">Apple</option>
+        <option value="Orange">Orange</option>
+        <option value="Kiwi">Kiwi</option>
+    </select>
+    <h1 id="dispdata"></h1>
+    <br>
+    <input type="text" id="txt" onblur="test()" name="name">
+    <input type="text" id="txt" onkeyup="test()" name="name">
+
+    <button id="demo">AddEvent</button>
+</body>
+</html>
+<script>
+    //onselect
+    function slct()
+    {
+        alert("You have select some text!")
+    }
+
+
+//onclick
+function clck()
+{
+    alert("you have clicked on button!")
+}
+
+//onchange
+function chng()
+{
+    let data = document.getElementById('fruits').value;
+    document.getElementById('dispdata').innerHTML = "Yo have select "+data 
+}
+
+//onblur
+function test()
+{
+    
+    let v = document.getElementById('txt');
+    console.log(v);
+    v.value = v.value.toUpperCase();
+}
+let button = document.querySelector('#demo')
+button.addEventListener('click',function(){
+        alert("you have clicked on button")
+})
+</script>

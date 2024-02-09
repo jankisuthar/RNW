@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="one">Good Morniong!</h1>
+    <button id="hide">Click me to Hide</button>
+    <br><br>
+    <h1 class="two" style="display: none;">Have a nice Day!</h1>
+    <button id="show">Click me to show</button>
+    <br><br>
+    <h1 class="three" >This is jquery class</h1>
+    <button id="toggle">Click me to toggle</button>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){     
+        //hide
+        $('#hide').click(function(){
+            $('.one').hide(1000)
+        })
+
+        //show
+        $('#show').click(function(){
+            $('.two').show(1000)
+        })
+
+        //toggle
+        $('#toggle').click(function(){
+            $('.three').toggle  (1000)
+        })
+    })
+</script>

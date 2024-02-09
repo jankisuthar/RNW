@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Vehicle(vehicleName)
+    {
+        this.vehicleName=vehicleName
+    }
+    Vehicle.prototype.display=function()
+    {
+        return "vehicle is "+this.vehicleName
+    }
+    // console.log(Vehicle.prototype.display());
+    function Bike(vehicleName)
+    {
+        this.vehicleName=vehicleName;
+    
+    }
+    Bike.prototype = Object.create( Vehicle.prototype)
+    let bike = new Bike("Yamaha")
+    // console.log(bike);
+    console.log(bike.display());
+</script>

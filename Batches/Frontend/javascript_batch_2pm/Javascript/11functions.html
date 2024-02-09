@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // function : function is a block of code
+    // Two Types of functions
+    // 1. Built-in Function - simple,withpara,default,return
+    // 2. User Define Function
+
+    // UDF
+    // simple function
+    function func()
+    {
+        console.log("This is first function");
+    }
+    func();
+
+    // function with para
+    function Name(fname,lname)
+    {
+        console.log("My first name is ",fname);
+        console.log("My last name is ",lname);
+    }
+    Name("John","Doe")
+
+    //function with default para
+    function Demo(country="India")
+    {
+        console.log("My country name is ",country);
+    }
+    // Demo()
+    // Demo("Canada")
+    // Demo(null)
+
+    //return
+    function Addition(num1,num2)
+    {
+        sum = num1+num2
+        return sum
+    }
+   console.log("Addition of 4+5=",Addition(4,5));
+
+//    Recursion : function that calls itself is called recursive function
+
+function Countdown(number)
+{
+    console.log(number);
+
+    const newnumber = number - 1 ;
+    if(newnumber > 0)
+    {
+        Countdown(newnumber)
+    }
+}
+Countdown(5)
+
+//nestead function
+function func1(name)
+{
+        console.log(name);
+        function func2(surname)
+        {
+            console.log(surname);
+        }
+        func2("doe")
+}
+func1("John")
+
+
+// 1. javascript program to chek prime number
+// 2. javascript program to check a number is odd or even - user input
+
+
+</script>

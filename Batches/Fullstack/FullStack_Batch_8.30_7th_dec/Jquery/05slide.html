@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p class="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eaque tempora quibusdam quo voluptatum, quos vero. Est atque ullam repellat? Nulla tempora, ut id quisquam aliquid, inventore esse culpa libero eius officiis vel enim alias, mollitia similique sit! Ad, mollitia consequatur! Nobis eius nulla praesentium quia animi dolor facere ut! Eos, maiores. Ullam itaque autem, porro eos accusantium natus est possimus esse aliquid voluptatibus doloribus tempora, eum accusamus minus quibusdam aliquam assumenda commodi facere quae reprehenderit molestiae. Delectus, assumenda? Dolorem, libero doloribus, id dolore aut totam minus necessitatibus animi odio porro, perspiciatis magnam impedit possimus accusamus ipsa sint eius molestiae.</p>
+    <button id="out">Clicke me to slide up</button>
+    <br>
+    <p class="two" style="display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eaque tempora quibusdam quo voluptatum, quos vero. Est atque ullam repellat? Nulla tempora, ut id quisquam aliquid, inventore esse culpa libero eius officiis vel enim alias, mollitia similique sit! Ad, mollitia consequatur! Nobis eius nulla praesentium quia animi dolor facere ut! Eos, maiores. Ullam itaque autem, porro eos accusantium natus est possimus esse aliquid voluptatibus doloribus tempora, eum accusamus minus quibusdam aliquam assumenda commodi facere quae reprehenderit molestiae. Delectus, assumenda? Dolorem, libero doloribus, id dolore aut totam minus necessitatibus animi odio porro, perspiciatis magnam impedit possimus accusamus ipsa sint eius molestiae.</p>
+    <button id="in">Clicke me to slide down</button>
+    <br>
+    <p class="three" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eaque tempora quibusdam quo voluptatum, quos vero. Est atque ullam repellat? Nulla tempora, ut id quisquam aliquid, inventore esse culpa libero eius officiis vel enim alias, mollitia similique sit! Ad, mollitia consequatur! Nobis eius nulla praesentium quia animi dolor facere ut! Eos, maiores. Ullam itaque autem, porro eos accusantium natus est possimus esse aliquid voluptatibus doloribus tempora, eum accusamus minus quibusdam aliquam assumenda commodi facere quae reprehenderit molestiae. Delectus, assumenda? Dolorem, libero doloribus, id dolore aut totam minus necessitatibus animi odio porro, perspiciatis magnam impedit possimus accusamus ipsa sint eius molestiae.</p>
+    <button id="toggle">Clicke me to slide toggle</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //slideup
+        $('#out').click(function(){
+            $('.one').slideUp(2000)
+        })
+        //slidedown
+        $('#in').click(function(){
+            $('.two').slideDown(2000)
+        })
+        //slide up/down
+        $('#toggle').click(function(){
+            $('.three').slideToggle(2000)
+        })
+    })
+</script>

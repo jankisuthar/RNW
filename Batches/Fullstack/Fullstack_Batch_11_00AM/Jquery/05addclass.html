@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .demo{
+            background-color: black;
+            color: bisque;
+            text-align: center;
+        }
+        .test{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            border: 3px solid;
+            color: white;
+            text-align: center;
+        }
+        
+        #btn{
+            background-color: chocolate;
+            color: blanchedalmond;
+            padding: 20px;
+            border: none;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .tc{
+            border-bottom-right-radius: 0px!important;
+            border-top-left-radius: 0px!important;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: cadetblue!important;
+            color: brown!important;
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color:darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Good Morning</h1>
+    <button id="add">Add Class</button>
+    <div class="test">This is Div</div>
+    <button id="remove">Remove class</button>
+    <br>
+    
+    <br>
+    <button id="btn">Click me to Add & Remove the class</button>
+    <br><br>
+    <div class="one" id="p">Hello</div>
+    <button id="yu">toggle</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //add class
+        $('#add').click(function(){
+            $('h1').addClass('demo')
+        })
+
+        //remove class
+        $('#remove').click(function(){
+            $('div').removeClass('test')
+        })
+
+        //toggle
+        $('#btn').click(function(){
+            $('#btn').toggleClass('tc')
+        })
+
+        //toggle
+        $('#yu').click(function(){
+            $('#p').toggleClass()
+        })
+    })
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/on.jpg" alt="" id="image" onmouseover="hover()" onmouseout="out()">
+</body>
+</html>
+<script>
+    function hover(){
+        img = document.getElementById('image');
+        img.src ='img/off.jpg';
+    }
+    function out()
+    {
+        img = document.getElementById('image');
+        img.src ='img/on.jpg';
+    }
+</script>

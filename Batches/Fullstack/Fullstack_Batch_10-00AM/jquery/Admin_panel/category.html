@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    
+
+    <!-- sidebar start -->
+    <div id="sidebar">
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="category.html">Category</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div id="sidebar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+      </div>
+     <!-- sidebar end -->
+     <!-- header start -->
+      <div class="love">
+            <div class="header">
+                <div class="search">
+                    <input type="text" placeholder="Search" class="search">
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+            </div>
+      </div>
+   <!-- header end -->
+   <!-- content start -->
+   <div class="container mt-5 text-white">
+   <h2>Add Category</h2>
+    <form class="">
+        <input type="text" name="cat" placeholder="Enter Category" class="form-control w-50">
+        <br>
+        <button type="submit" class="btn btn-primary">Add Category</button>
+    </form>
+
+    <h2 class="mt-5">Show Category</h2>
+    <table class="table text-white text-center">
+        <th>ID</th>
+        <th>Category</th>
+        <th>Update</th>
+        <th>Delete</th>
+        <tr>
+            <td>001</td>
+            <td>BMW</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Audi</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>WalksWegon</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+    </table>
+   </div>
+   <!-- content end -->
+  
+   <!-- footer start -->
+   <footer class="">
+    <h3><center>CopyRight@2023 By RNWA3</center></h3>
+   </footer>
+   <!-- footer end -->
+</body>
+</html>
+<script src="js/jquery.js"> </script>  
+<script>  
+$(document).ready(function() {
+  $('#sidebar-btn').on('click', function() {
+    $('#sidebar').toggleClass('visible');
+  });
+});
+</script>

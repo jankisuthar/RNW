@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <button class="out">Fadeout</button>
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iste eveniet, quod perferendis quidem tempore inventore eligendi, esse quis blanditiis officiis molestias aliquid est officia atque dolore voluptates! Soluta nisi sit harum sequi a assumenda nemo deserunt perspiciatis, at voluptatum nihil laboriosam ad dignissimos sint non aliquam animi rerum cumque totam, delectus repellendus, veritatis vel maxime. Voluptate, repudiandae facilis iure odio ducimus hic. Cumque similique blanditiis tempora ducimus, quibusdam adipisci necessitatibus fuga exercitationem quidem nam, qui quae quod nobis ad accusamus architecto dolor magni quisquam doloremque voluptatem? Pariatur, minima. Quidem voluptas placeat ea soluta cumque ducimus quia unde sunt aperiam veritatis consequuntur in corporis quas quis aspernatur commodi hic, cupiditate reprehenderit ratione expedita libero adipisci laboriosam obcaecati! Voluptates, provident distinctio tenetur accusamus exercitationem animi totam? Rem accusantium tempora quam est eaque, dignissimos doloremque tempore illum magni, cupiditate expedita voluptates officia, animi excepturi quia cum magnam saepe ducimus nobis. Inventore, dignissimos consectetur facere illo qui a sed obcaecati saepe porro labore totam alias nemo reiciendis, quo rem quas fuga est distinctio, illum mollitia fugiat sint. Totam molestias voluptas quisquam, ea maiores tempora fugiat corporis sit nostrum aspernatur eum pariatur eligendi provident aperiam expedita tenetur repellendus facere in repudiandae velit quo nemo.</p>
+   <button class="in">fadein</button>
+    <p class="two" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iste eveniet, quod perferendis quidem tempore inventore eligendi, esse quis blanditiis officiis molestias aliquid est officia atque dolore voluptates! Soluta nisi sit harum sequi a assumenda nemo deserunt perspiciatis, at voluptatum nihil laboriosam ad dignissimos sint non aliquam animi rerum cumque totam, delectus repellendus, veritatis vel maxime. Voluptate, repudiandae facilis iure odio ducimus hic. Cumque similique blanditiis tempora ducimus, quibusdam adipisci necessitatibus fuga exercitationem quidem nam, qui quae quod nobis ad accusamus architecto dolor magni quisquam doloremque voluptatem? Pariatur, minima. Quidem voluptas placeat ea soluta cumque ducimus quia unde sunt aperiam veritatis consequuntur in corporis quas quis aspernatur commodi hic, cupiditate reprehenderit ratione expedita libero adipisci laboriosam obcaecati! Voluptates, provident distinctio tenetur accusamus exercitationem animi totam? Rem accusantium tempora quam est eaque, dignissimos doloremque tempore illum magni, cupiditate expedita voluptates officia, animi excepturi quia cum magnam saepe ducimus nobis. Inventore, dignissimos consectetur facere illo qui a sed obcaecati saepe porro labore totam alias nemo reiciendis, quo rem quas fuga est distinctio, illum mollitia fugiat sint. Totam molestias voluptas quisquam, ea maiores tempora fugiat corporis sit nostrum aspernatur eum pariatur eligendi provident aperiam expedita tenetur repellendus facere in repudiandae velit quo nemo.</p>
+      <button class="toggle">fade toggle</button>
+    <p class="three" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iste eveniet, quod perferendis quidem tempore inventore eligendi, esse quis blanditiis officiis molestias aliquid est officia atque dolore voluptates! Soluta nisi sit harum sequi a assumenda nemo deserunt perspiciatis, at voluptatum nihil laboriosam ad dignissimos sint non aliquam animi rerum cumque totam, delectus repellendus, veritatis vel maxime. Voluptate, repudiandae facilis iure odio ducimus hic. Cumque similique blanditiis tempora ducimus, quibusdam adipisci necessitatibus fuga exercitationem quidem nam, qui quae quod nobis ad accusamus architecto dolor magni quisquam doloremque voluptatem? Pariatur, minima. Quidem voluptas placeat ea soluta cumque ducimus quia unde sunt aperiam veritatis consequuntur in corporis quas quis aspernatur commodi hic, cupiditate reprehenderit ratione expedita libero adipisci laboriosam obcaecati! Voluptates, provident distinctio tenetur accusamus exercitationem animi totam? Rem accusantium tempora quam est eaque, dignissimos doloremque tempore illum magni, cupiditate expedita voluptates officia, animi excepturi quia cum magnam saepe ducimus nobis. Inventore, dignissimos consectetur facere illo qui a sed obcaecati saepe porro labore totam alias nemo reiciendis, quo rem quas fuga est distinctio, illum mollitia fugiat sint. Totam molestias voluptas quisquam, ea maiores tempora fugiat corporis sit nostrum aspernatur eum pariatur eligendi provident aperiam expedita tenetur repellendus facere in repudiandae velit quo nemo.</p>
+
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //out
+        $('.out').click(function(){
+            $('.one').fadeOut(2000)
+        })
+        //in
+        $('.in').click(function(){
+            $('.two').fadeIn(2000)
+        })
+        //toggle
+        $('.toggle').click(function(){
+            $('.three').fadeToggle(3000)
+        })
+    })
+</script>

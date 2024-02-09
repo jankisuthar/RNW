@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // object : objects are always comes with key & value in a pair
+
+    const obj = {id:101,name:"John",age:26,email:"john@gmail.com"}
+    // console.log(obj);
+    // console.log(obj['name']);
+    // console.log(obj['age']);
+
+    // console.log(obj.name);
+    // console.log(obj.email);
+
+    //for in
+    // for(let data in obj)
+    // {
+    //     console.log(obj[data]);
+    // }
+
+    //map
+    // let newadta = Object.entries(obj).map((ele)=>{
+    //     console.log(ele[1]);
+    // })
+
+
+    const arr = [
+        {
+            id:101,
+            name:"john",
+            age:22,
+            email:"john@gmail.com"
+        },
+        {
+            id:102,
+            name:"Angella",
+            age:26,
+            email:"angella@gmail.com"
+        },
+        {
+            id:103,
+            name:"Albert",
+            age:30,
+            email:"albert@gmail.com"
+        },
+        {
+            id:104,
+            name:"cat",
+            age:27,
+            email:"cat@gmail.com"
+        }
+
+    ]
+    // console.log(arr[2]);
+
+    // let b = Object.entries(arr).map((element)=>{
+    //     console.log(element[1]);
+    // })
+
+    // arr.forEach(element => {
+    //     console.log(element);
+        
+    // });
+
+    arr.map((ele)=>{
+        console.log(ele);
+    })
+
+    //for of
+    // for(let data of arr)
+    // {
+    //     console.log(data);
+    // }
+
+    // for in
+    // for(let data in arr)
+    // {
+    //     console.log(arr[data]);
+    // }
+
+</script>

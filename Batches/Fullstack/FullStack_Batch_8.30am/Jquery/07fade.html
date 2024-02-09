@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tempora vitae qui eum voluptatem ipsum? Aperiam quam aliquid ad consequuntur facere exercitationem reiciendis iure maiores provident! Ducimus fugit in alias incidunt quia eos, illum quas totam dolores repellat. Expedita sunt voluptates culpa velit, illo ut sapiente voluptatibus natus, illum, corrupti aliquam omnis eveniet. Exercitationem, dolor quibusdam molestias explicabo non soluta distinctio optio ab harum necessitatibus beatae corporis debitis qui rem consequuntur dolore tenetur accusamus, sit itaque reiciendis obcaecati. Aliquid excepturi ut cumque quia, quo fuga delectus alias placeat dolores omnis facere, totam modi tempore officiis sapiente! Ex vitae beatae dolorum nemo, ad illo. Et eligendi facere earum atque. Atque aspernatur aperiam voluptate! Autem et deserunt labore quas modi fuga impedit dolores dolorem maxime, consectetur cupiditate qui incidunt facere? Expedita illum, recusandae ipsa cumque voluptatem labore alias voluptas? Ea ex, dolores, necessitatibus sapiente corrupti nihil temporibus magni, modi suscipit possimus quia aspernatur accusantium velit. Soluta dolores quam voluptas voluptate, vero reiciendis neque temporibus quo iste, maiores fugit delectus accusantium error vitae quae quod sequi doloremque voluptatum exercitationem natus omnis, molestiae corporis. Omnis eos, corrupti officia commodi beatae quas nobis ipsum ab molestias sapiente quis nesciunt facere perferendis autem odio. Maiores, veniam?</p>
+    <button class="one">Clicke me to fade out</button>
+    <br><br>
+    <span style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error cupiditate autem esse molestias enim. Debitis voluptatibus doloribus exercitationem! Ea voluptates enim magni fuga debitis, illo, ex nisi, vel ut molestias odit voluptas omnis? Et corporis similique suscipit quos eius doloribus ipsum voluptate possimus iste praesentium, ratione quam! Ipsum quia illum quam et modi illo vero optio pariatur facilis, laudantium possimus debitis minima reiciendis tempora temporibus sunt voluptatum deleniti ullam blanditiis eum? Et maiores, illum ab provident, in blanditiis ipsa mollitia quo pariatur fuga optio minima! Sed debitis obcaecati porro natus sunt deleniti in, ipsam accusantium quasi asperiores harum placeat numquam inventore ipsa omnis, alias illum saepe eos vel pariatur laudantium accusamus beatae! Reprehenderit blanditiis debitis repellat itaque fuga quam vero quo in enim obcaecati totam cumque molestiae minima, animi eveniet numquam aspernatur sunt molestias voluptatibus, dignissimos recusandae! Atque ducimus quod blanditiis illum hic ratione quas excepturi inventore distinctio? Doloribus repellat soluta expedita tenetur provident nemo harum earum, enim nostrum nobis, libero quod hic explicabo velit voluptatem facere reprehenderit corporis quidem repellendus blanditiis numquam non. Error ipsum odit nam fugiat illo? Iure cum nihil molestiae ipsa magni sunt quam tempore unde nisi officiis maiores, modi laudantium beatae eligendi ex quo explicabo!</span>
+    <button class="two">Clicke me to fade IN</button>
+    <br><br>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil sequi soluta ipsum minus animi beatae laborum necessitatibus cupiditate dolores ullam facere quo laudantium, recusandae labore omnis adipisci at officia aliquid possimus obcaecati voluptas consequuntur? Ducimus culpa magnam corrupti? Fuga quos rerum consectetur laborum, eveniet iure aliquam ullam in, quisquam deleniti, saepe sint unde quasi eos non consequatur perspiciatis harum animi maxime! Itaque numquam odit consequatur neque reiciendis eaque magni quibusdam provident ex animi et asperiores quis voluptatibus laboriosam incidunt aspernatur recusandae, harum id reprehenderit nesciunt iure. Deleniti quas, aperiam commodi itaque ut rem similique! Repellendus, eos. Explicabo necessitatibus error nemo ut perferendis, cum id doloremque tempore delectus, dolorem odit eos et, obcaecati sequi nulla hic excepturi harum officia consequuntur quaerat facilis. Delectus sunt culpa molestiae officiis quas maiores ullam doloribus, repellat ad amet molestias! Labore porro aut reprehenderit ad ipsam corporis voluptate sint, sed, iure odio blanditiis esse, molestiae voluptatum! Itaque magnam assumenda sint sed vero quis, asperiores consequuntur tempore dolor aspernatur qui officiis perspiciatis minus, alias eos odio quas repellat velit iste ratione harum. Nisi, at! Incidunt cumque, alias optio sed a porro voluptatum ipsum commodi hic aliquid quis fugit, dicta laborum error itaque sit? A suscipit optio vero!</div>
+    <button class="three">Click me to fade IN/Out</button>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        //fade out
+        $('.one').click(function(){
+            $('p').fadeOut(2000)
+        })
+          //fade In
+          $('.two').click(function(){
+            $('span').fadeIn(2000)
+        })
+        //fade toggle
+        $('.three').click(function(){
+            $('div').fadeToggle(2000 )
+        })
+    })
+</script>

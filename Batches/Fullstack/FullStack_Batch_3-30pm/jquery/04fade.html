@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 id="one">Hello All</h1>
+    <button id="btn1">Click me</button>
+    <p id="two" style="display: none;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod quis obcaecati temporibus optio modi, vel maiores consequatur repellat aut eaque iusto molestias maxime inventore unde quidem debitis excepturi fugit!</p>
+    <button id="btn2">click me to fade in</button>
+    <p id="three" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod quis obcaecati temporibus optio modi, vel maiores consequatur repellat aut eaque iusto molestias maxime inventore unde quidem debitis excepturi fugit!</p>
+    <button id="btn3">click me to fade Toggle</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //fade out
+        $('#btn1').click(function(){
+            $('#one').fadeOut(2000)
+        })
+        // fade in
+        $('#btn2').click(function(){
+            $('#two').fadeIn(2000)
+        })
+        //fadetoggle
+        $('#btn3').click(function(){
+            $('#three').fadeToggle(2000)
+        })
+    })
+</script>

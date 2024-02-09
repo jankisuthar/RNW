@@ -1,0 +1,34 @@
+@media only screen and (min-width:1400px){
+    *{
+        margin: 0;
+        padding: 0!important;
+        box-sizing: border-box;
+    }
+    .main{
+        background-color: grey;
+        display: flex;
+    }
+    .main div{
+        /* height: 200px; */
+        /* width: 20%; */
+        border: 2px solid;
+        margin: 50px;
+        /* font-size: 1em; */
+        /* font-size: 12pt; */
+    }
+    .one{
+        /* background-color: aqua; */
+        /* width: 30%; */
+        width: 300px;
+      
+    }
+    /* .two{background-color: bisque;} */
+    /* .three{background-color: blueviolet;} */
+    /* .four{background-color: burlywood;} */
+   
+
+    img{
+        max-width: 100%;
+     
+    }
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin: 20px;
+}
+.search{margin: 20px;}
+
+.header-buttons {margin: 20px;}
+
+.inpt{
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #A6A6A6;
+    outline: none;
+    /* position: absolute; */
+}
+.header-buttons{
+    /* padding-top: 12px; */
+}
+.header-buttons button{
+    width: 200px;
+    height: 35px;
+  
+    background-color: white;
+    color:#07689F ;
+    font-weight: bold;
+    border: 1px solid #07689F;
+    border-radius: 2px;
+}
+.in-search{
+    display: flex;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: #A6A6A6;
+    margin: 10px;
+    border: 1px solid #A6A6A6;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.active{
+    color: white!important;
+    background-color: #07689F;
+    border: 1px solid white!important;
+}
+.trip{
+    margin-top: 10px;
+    background: url('img/Landing\ Page\ Banner\ With\ Effect.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

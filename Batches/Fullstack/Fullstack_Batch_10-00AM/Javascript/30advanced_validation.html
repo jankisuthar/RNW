@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" id="name" onblur="valid_data(this,'nameError')" onkeypress="Name_valid(this,'nError')">
+            <span id="nameError"></span>
+            <span id="nError"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" id="email" onblur="valid_data(this,'emailError')" onkeypress="Email_valid(this,'eError')">
+            <span id="emailError"></span>
+            <span id="eError"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="pwd" id="pwd" onblur="valid_data(this,'pwdError')" onkeypress="Pwd_valid(this,'pError')">
+            <span id="pwdError"></span>
+            <span id="pError"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="number" name="mobile" id="mobile" onblur="valid_data(this,'mError')" onkeypress="Mobile_valid(this,'Error')">
+            <span id="mError"></span>
+            <span id="Error"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="validate.js"></script>

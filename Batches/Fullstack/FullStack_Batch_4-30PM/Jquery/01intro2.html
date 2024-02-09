@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     alert("This is an jquery alert box!");
+        // })
+
+        //element selector
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         alert("You have clicked on button!");
+        //     })
+        // })
+
+
+        //class selector
+        $(document).ready(function(){
+            $('.one').click(function(){
+                alert("You have clicked on button!");
+            })
+        })
+
+        //id selector
+        $(document).ready(function(){
+            $('#two').click(function(){
+                alert("you have clicked on id selector!");
+            })
+        })
+    </script>
+</head>
+<body>
+    <button class="one">Click Me</button>
+    <br><br>
+    <button id="two">Click</button>
+</body>
+</html>

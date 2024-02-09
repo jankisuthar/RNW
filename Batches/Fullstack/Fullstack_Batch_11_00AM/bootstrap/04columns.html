@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- vertically alignment
+        row:
+    align-items-start
+    align-items-center
+    align-items-end
+    col :
+    align-self-start
+    align-self-center
+    align-self-end
+-->
+    <div class="container bg-warning" >
+        <div class="row align-items-start" style="height: 500px;">
+            <div class="col-6 bg-success">col-6</div>
+            <div class="col-6 bg-primary">col-6</div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container bg-info" >
+        <div class="row align-items-start" style="height: 500px;">
+            <div class="col-4 bg-success align-self-start">col-4</div>
+            <div class="col-4 bg-primary align-self-center">col-4</div>
+            <div class="col-4 bg-warning align-self-end">col-4</div>
+        </div>
+    </div>
+
+
+    <!-- horizontal alignment
+    row:
+    justify-content-start
+    justify-content-center
+    justify-content-end -->
+    <br><br>
+    <div class="container bg-info" >
+        <div class="row align-items-start justify-content-end" >
+            <div class="col-4 bg-success align-self-start">col-4</div>
+            <div class="col-4 bg-primary align-self-center">col-4</div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // class = class is a template for javascript object
+
+    class Test{
+       constructor(){
+        console.log("This is class");
+       }
+    }
+    let obj = new Test();
+
+
+    class Car{
+        constructor(name,year){
+            this.name = name
+            this.year = year
+        }
+    }
+    let CarObj = new Car("BMW",2005)
+    console.log(CarObj.name);
+    console.log(CarObj.year);
+
+
+    class fruits{
+        constructor(name,weight){
+            this.name = "Apple"
+            this.weight = "1kg"
+        }
+    }
+    let FruitsObj = new fruits();
+    console.log(FruitsObj);
+    console.log(FruitsObj.name);
+    console.log(FruitsObj.weight);
+</script>

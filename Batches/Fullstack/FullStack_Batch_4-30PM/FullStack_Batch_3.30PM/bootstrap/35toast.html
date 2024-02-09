@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .test
+        {
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+   <div class="container mt-5">
+  <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+  
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Toast Header</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Some text inside the toast body</p>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
+
+    
+</body>
+</html>

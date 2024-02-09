@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            overflow: hidden;
+        }
+        .card img{
+            height: 200px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.2);
+            height: 200px;
+            width: 300px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            /* display: block; */
+        }
+        .card:hover .overlay{
+            opacity: 1;
+            transform-origin: right center 0%;
+            transform-style: flat;
+            transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out;
+            top: 0;
+            pointer-events: none;
+            transform: perspective(100px) rotateY(-360deg) ;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="card">
+        
+        <img src="../CSS/img/bg.jfif" alt="">
+        <div class="overlay">  </div>
+    </div>
+
+</body>
+</html>

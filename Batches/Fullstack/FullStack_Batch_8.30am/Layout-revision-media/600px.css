@@ -1,0 +1,69 @@
+@media only screen and (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        background: url('img/h1_hero1.jpg.webp');
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    } 
+    header{
+        display: block;
+        text-align: center;
+        padding: 30px ;
+    }
+    nav{
+        margin-top: 10px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 0px 12px 0px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .call{margin-top: 20px;}
+    header span{color: white;font-size: 20px;}
+    header .contact{border-bottom: 2px dashed white;}
+    .fa-heart{color: white;}
+    .call a{text-decoration: none;color: white;font-size: 20px;background-color: #F15B43;padding: 10px;border: 1px solid transparent;}
+    .call a:hover{background-color: transparent;border: 1px solid white;}
+}
+@media only screen and (min-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        background: url('img/h1_hero1.jpg.webp');
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    } 
+    header{
+        display: block;
+        text-align: center;
+        padding: 30px ;
+    }
+    nav{
+        margin-top: 10px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 0px 12px 0px 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .call{margin-top: 20px;}
+    header span{color: white;font-size: 20px;}
+    header .contact{border-bottom: 2px dashed white;}
+    .fa-heart{color: white;}
+    .call a{text-decoration: none;color: white;font-size: 20px;background-color: #F15B43;padding: 10px;border: 1px solid transparent;}
+    .call a:hover{background-color: transparent;border: 1px solid white;}
+}
+

@@ -1,0 +1,21 @@
+ @media only screen and (min-width:768px) {
+            .main{
+                width: 100%;
+                background-color: grey;
+               padding: 50px 0px 50px 0px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .main div{
+                height: 200px;
+                width: 200px;
+                
+            }
+            .one{
+                background-color: aqua;
+            }
+            .two{background-color: blue;}
+            .three{background-color: blueviolet;}
+            .four{background-color: brown;}
+        }

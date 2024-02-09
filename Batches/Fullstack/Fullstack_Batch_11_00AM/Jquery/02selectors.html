@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>Good Morning</h1>
+    <br>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ducimus odit, corporis eum sed aliquid quibusdam pariatur libero nostrum mollitia delectus voluptates repellat quam! Iusto, autem. Odio natus dolores earum. Tempore sapiente placeat quasi, ab incidunt adipisci ullam harum vel architecto maiores unde, tenetur hic, similique quidem porro error et delectus ducimus temporibus dolorum earum! Ipsa voluptatibus ipsam praesentium laboriosam expedita? Beatae, facilis? Dignissimos adipisci cumque ipsam! Voluptatem cupiditate deleniti ea praesentium qui perspiciatis dolorum dolores impedit, beatae numquam explicabo, quidem labore temporibus laboriosam doloribus? Pariatur odio, deserunt delectus neque quaerat ratione dolorem at ipsa! Ipsum sapiente odio amet a.</p>
+    <br>
+    <div id="demo"></div>
+</body>
+</html>
+<script>
+    //element selector
+    $(document).ready(function(){
+        $('h1').css('color','red');
+    })
+
+    //class selector
+    $(document).ready(function(){
+        $('.test').css({'color':'white','background':'black'})
+    })
+
+    //id selector
+    $(document).ready(function(){
+        $('#demo').css({'height':'200px','width':'200px','background':'green','margin':'auto'})
+    })
+</script>

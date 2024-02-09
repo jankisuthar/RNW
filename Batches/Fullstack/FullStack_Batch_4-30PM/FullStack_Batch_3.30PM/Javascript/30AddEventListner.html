@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one">Hello Javascript</p>
+    <!-- <button onclick=" test()">Click me</button> -->
+    <button id="first">Click</button>
+    <button id="second">MyClicks</button>
+</body>
+</html>
+<script>
+    // function test()
+    // {
+    //     document.getElementById('one').style.color="red"
+    //     document.getElementById('one').style.background="yellow"
+    //     document.getElementById('one').style.textAlign="center"
+    // }
+
+    document.querySelector('#first').addEventListener('click',function(){
+        // document.getElementById('one').style.color="red"
+        // document.getElementById('one').style.background="yellow"
+        // document.getElementById('one').style.textAlign="center"
+        document.getElementById('one').style.cssText = "color: blue; font-size: 2em; text-align: center";
+    })
+    document.querySelector('#second').addEventListener('click',function(){
+        document.getElementById('one').style.color="green"
+        document.getElementById('one').style.background="grey"
+        document.getElementById('one').style.textAlign="center"
+    })
+
+
+</script>

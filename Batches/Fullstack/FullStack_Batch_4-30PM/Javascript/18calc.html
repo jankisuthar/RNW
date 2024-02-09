@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="one" onclick="oneclck()" value="1">1</button>
+    <button id="sum" value="+" onclick="sum()">+</button>
+    <button id="two" value="2" onclick="twoclck()">2</button>
+    <button id="total" onclick="ans()">Answer</button>
+</body>
+</html>
+<script>
+    function oneclck(){
+ one =  document.getElementById('one').value;
+
+ console.log(one);
+    }
+    function sum(){
+        sum = document.getElementById('sum').value;
+ console.log(sum);
+    }
+    function twoclck(){
+        two = document.getElementById('two').value;
+ console.log(two);
+    }
+    function ans(){
+       sumdata =  parseInt(document.getElementById('one').value)+parseInt(document.getElementById('two').value ) 
+       console.log(sumdata);
+    }
+</script>

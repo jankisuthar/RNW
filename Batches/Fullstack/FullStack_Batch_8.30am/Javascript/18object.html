@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" align="center">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Subject</th>
+        <tbody id="mydata"></tbody>
+    </table>
+</body>
+</html>
+<script>
+    const obj = {name:'john doe',age:23,profession:"Teacher"}
+    console.log(obj);
+    console.log(obj.name);
+    console.log(obj['age']);
+
+    //for in
+    // for(data in obj)
+    // {
+    //     console.log(data+"=>"+obj[data]);
+    // }
+
+
+    //map
+    // Object.entries(obj).map((ele)=>{
+    //     console.log(ele);
+    // })
+
+   
+
+   let data = [
+    {
+        name:"john",
+        age : 23,
+        sub : "Chemistrey"
+    },
+    {
+        name:"stella",
+        age : 25,
+        sub : "Physics"
+    },
+    {
+        name:"Angella",
+        age : 29,
+        sub : "Maths"
+    },
+   ]
+
+//    console.log(data);
+//    data.map((e)=>{
+//     console.log(e);
+//    })
+HTMLDATA=''
+data.forEach(element => {
+    HTMLDATA+=`
+        <tr>
+            <td>${element.name}</td>
+            <td>${element.age}</td>
+            <td>${element.sub}</td>
+        </tr>
+    `
+    document.querySelector('#mydata').innerHTML = HTMLDATA
+});
+
+// for(test of data)
+// {
+//     console.log(test);
+// }
+</script>

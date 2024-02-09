@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="05img.html" enctype="multipart/form-data" name="register form">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name here...">
+        <br><br>
+        <label >Email:</label>
+        <input type="email" name="name" placeholder="Enter your Email here...">
+        <br><br>
+        <label >Password:</label>
+        <input type="password" name="pwd" required>
+        <br><br>
+        <label>Address:</label>
+        <textarea name="address" ></textarea>
+        <br><br> 
+        <label>Gender:</label>
+        <input type="radio" name="gender" >Male
+        <input type="radio" name="gender" >Femle
+        <br><br>
+        <label>Languages:</label>
+        <input type="checkbox" name="lan">Gujarati
+        <input type="checkbox" name="lan">Hindi
+        <input type="checkbox" name="lan">English
+        <br><br>
+        <label >Image:</label>
+        <input type="file" name="file">
+        <br><br>
+        <label>Country:</label>
+        <select name="country" >
+            <option>India</option>
+            <option>Europe</option>
+            <option>Canada</option>
+            <option>USA</option>
+        </select>
+        <br><br>
+        <label>Range:</label>
+        <input type="range" name="range">
+        <br><br>
+        <label>Date:</label>
+        <input type="date" name="date">
+        <br><br>
+        <label>Color:</label>
+        <input type="color" name="color">
+        <br><br>
+        <label>Telephone:</label>
+        <input type="tel" name="telephone" pattern="[0-9]{10}">
+        <br><br>
+        <input type="submit" name="submit" value="submit">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

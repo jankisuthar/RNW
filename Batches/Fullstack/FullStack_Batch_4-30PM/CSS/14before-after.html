@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one
+        {
+            border: 2px solid;
+            height: 200px;
+            width: 200px;
+        }
+        .one:hover{
+            background-color: aqua;
+            border: none;
+        }
+        p::before
+        {
+            content:url('img/bg.jfif');
+            height: 100px;
+            width: 100%;
+            display: inline-block;
+            /* margin: 10px; */
+            /* padding: 50px; */
+            
+        }
+        p::after
+        {
+            content:'Welcome to Red & White';
+            /* border: 2px solid red; */
+            border-bottom: 2px solid;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <p>Hello!</p>
+</body>
+</html>

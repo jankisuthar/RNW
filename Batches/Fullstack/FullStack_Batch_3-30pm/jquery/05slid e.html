@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum fugiat, ullam totam dolorum iusto ad repellendus nihil tenetur, doloremque quae eligendi et placeat nostrum libero nemo consequuntur eaque qui velit adipisci ea alias veritatis. Eligendi iusto quo vel et quia hic nisi aperiam quod distinctio ipsum repudiandae rem architecto suscipit facilis laudantium aut assumenda eum aliquam unde reprehenderit excepturi, reiciendis vero doloribus recusandae. Fuga quis iste, quidem exercitationem explicabo dignissimos quaerat eveniet doloremque accusantium cupiditate rerum illo. Velit, voluptatibus eaque vitae corporis autem facere quam praesentium illo commodi molestiae a fugit, quisquam ipsa dignissimos fugiat? Voluptates minus quisquam ducimus suscipit?</p>
+    <button class="slideup">click me to slide up</button>
+    <p id="two" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum fugiat, ullam totam dolorum iusto ad repellendus nihil tenetur, doloremque quae eligendi et placeat nostrum libero nemo consequuntur eaque qui velit adipisci ea alias veritatis. Eligendi iusto quo vel et quia hic nisi aperiam quod distinctio ipsum repudiandae rem architecto suscipit facilis laudantium aut assumenda eum aliquam unde reprehenderit excepturi, reiciendis vero doloribus recusandae. Fuga quis iste, quidem exercitationem explicabo dignissimos quaerat eveniet doloremque accusantium cupiditate rerum illo. Velit, voluptatibus eaque vitae corporis autem facere quam praesentium illo commodi molestiae a fugit, quisquam ipsa dignissimos fugiat? Voluptates minus quisquam ducimus suscipit?</p>
+    <button class="sliddown">click me to slide Down</button>
+    <p id="three" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum fugiat, ullam totam dolorum iusto ad repellendus nihil tenetur, doloremque quae eligendi et placeat nostrum libero nemo consequuntur eaque qui velit adipisci ea alias veritatis. Eligendi iusto quo vel et quia hic nisi aperiam quod distinctio ipsum repudiandae rem architecto suscipit facilis laudantium aut assumenda eum aliquam unde reprehenderit excepturi, reiciendis vero doloribus recusandae. Fuga quis iste, quidem exercitationem explicabo dignissimos quaerat eveniet doloremque accusantium cupiditate rerum illo. Velit, voluptatibus eaque vitae corporis autem facere quam praesentium illo commodi molestiae a fugit, quisquam ipsa dignissimos fugiat? Voluptates minus quisquam ducimus suscipit?</p>
+    <button class="sliddown-up">click me to slide Up/Down</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //slideup
+        $('.slideup').click(function(){
+            $('#one').slideUp(2000)
+        })
+        //slidedown
+        $('.sliddown').click(function(){
+            $('#two').slideDown(2000)
+        })
+          //slidetoggle
+          $('.sliddown-up').click(function(){
+            $('#three').slideToggle(2000)
+        })
+    })
+</script>

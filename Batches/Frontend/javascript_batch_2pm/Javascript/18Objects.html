@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote id="demo">
+       
+    </blockquote>
+</body>
+</html>
+<script>
+    // object : object always comes with key and value in a pair
+    let obj = {name:"John",age:25,profession:"student"}
+    // console.log(obj);
+
+
+    //call object properties
+    // console.log(obj.name);
+    // console.log(obj.age);
+    // console.log(obj.profession);
+
+
+    //for in loop
+    // for(let data in obj)
+    // {
+    //     console.log(obj[data]);
+    // }
+
+
+
+    //object methods
+
+        console.log(Object.entries(obj));
+    // Object.entries(obj).map((ele)=>{
+    //     console.log(ele);
+    // })
+
+    //keys
+    console.log(Object.keys(obj));
+
+    //values
+    console.log(Object.values(obj));
+
+    //object with array
+    let MyData =[
+        {
+            name:"Angella",
+            age:15
+        },
+        {
+            name:"john",
+            age : 17
+        }
+    ] 
+    console.log(MyData);
+    console.log(MyData[0].name);
+    console.log(MyData[1]['name']);
+
+    Object.entries(MyData).map((ele)=>{
+        console.log(ele);
+    })
+
+
+    //nestaed object
+    const Student={name:"John Doe",
+                  age:15,
+                  subject:{Commerce:"accounts",
+                          Science : "Maths"}
+                  }
+    console.log(Student);
+    console.log(Student.subject.Commerce);
+    console.log(Student['subject']['Science']);
+
+
+    //object with method
+    const customer = {
+        fname:"john",
+        lname:"Doe",
+        age:25,
+        Fullname:function(){
+            return "Full name is "+this.fname+" "+this.lname
+        }
+    }
+    console.log(customer);
+    console.log(customer.Fullname());
+
+
+    //create quotes
+    let quotes = [
+        {
+            id:1,
+            quote:"I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",
+            author:"Marilyn Monroe"
+        },
+        {
+            id:2,
+            quote:"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+            author:"Albert Einstein"
+        },
+        {
+            id:3,
+            quote:"So many books, so little time.",
+            author:"Frank Zappa"
+        }
+    ];
+
+    HTMLDATA=''
+    quotes.map((ele)=>{
+        // console.log(ele);
+        HTMLDATA+=`<p>${ele.quote}</p>
+                   <cite>--${ele.author}</cite>`
+        
+    })
+    document.querySelector('#demo').innerHTML=HTMLDATA;
+    console.log(HTMLDATA);
+    
+</script>

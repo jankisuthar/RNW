@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <button>Click</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //mouseover
+        $('.one').mouseover(function(){
+            $('.one').css({background:"red"})
+        })
+
+        //mouseout
+        $('.one').mouseout(function(){
+            $('.one').css({background:"black"})
+        })
+
+        //dbclick
+        $('button').dblclick(function(){
+            $('.one').css({height:"100px",width:"100px"})
+        })
+    })
+</script>

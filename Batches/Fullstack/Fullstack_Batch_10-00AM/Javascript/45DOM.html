@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">Good Morning</h1>
+    <button id="btn1">Click to apply the css</button>
+    <button id="btn2">Click to remove the css</button>
+</body>
+</html>
+<script>
+    document.querySelector('#btn1').addEventListener('click',function(){
+    document.getElementById('one').style.color="yellow"
+    document.getElementById('one').style.textAlign="center"
+    document.getElementById('one').style.backgroundColor="black"
+    })
+
+    document.querySelector('#btn2').addEventListener('click',function(){
+    document.getElementById('one').style.color="red"
+    document.getElementById('one').style.textAlign="left"
+    document.getElementById('one').style.backgroundColor="white"
+    })
+   
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 10px solid;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //hover
+        $('div').hover(function(){
+            $('div').css({'borderRadius':'50%'})
+        })
+
+        //out
+        $('div').mouseout(function(){
+            $('div').css({'borderRadius':'0%'})
+        })
+    })
+</script>

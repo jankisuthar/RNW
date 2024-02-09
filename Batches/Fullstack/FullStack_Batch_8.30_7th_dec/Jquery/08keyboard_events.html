@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="inpt">
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        // keydown
+        // $('#inpt').keydown(function(){
+        //     alert("Keys goes down!")
+        // })
+
+        //keyup
+        $('#inpt').keyup(function(){
+            a = document.getElementById('inpt')
+            console.log(a);
+            a.value=a.value.toUpperCase();
+        })
+
+
+        //keypress
+        // $('#inpt').keypress(function(){
+        //    alert("Key pressed!")
+        // })
+    })
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello"></h1>
+    <p id="one">Hello</p>
+    <div class="example">hi</div>
+    <div class="example">now</div>
+</body>
+</html>
+<script>
+    // Arithmatic Operator
+    let a = 12;
+    let b = 10;
+
+    let c  = a+b;
+
+    let d = a-b;
+    let e = a*b;
+    let f = a/b;
+    let g = a%b;
+    console.log(g);
+
+    // Assignment Operator
+
+    let x = 4;
+    let y = 5;
+
+    console.log(x+=y);
+    console.log(x-=y);
+    console.log(x*=y);
+    console.log(x/=y);
+    console.log(x%=y);
+
+
+    // Comparison operator
+    console.log(x==y);
+    console.log(x>y);
+    console.log(x<y);
+    console.log(x>=y);
+    console.log(x<=y);
+    console.log(x===y);
+
+    document.getElementById('hello').innerHTML="Happy New Year!";
+    document.getElementById('one').innerText="Have nice year!"
+    let h = document.getElementsByClassName('example');
+    h[1].innerHTML = "how are you?"
+</script>

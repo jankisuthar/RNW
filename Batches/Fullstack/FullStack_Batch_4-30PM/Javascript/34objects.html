@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+</html>
+<script>
+    const obj = {name:"John",age:25,profession:"Teacher"}
+    console.log(obj);
+    console.log(obj.name);
+    console.log(obj['age']);
+
+    const prsn = {name:"Angella",
+                age:30,
+                vehicle:{
+                    two_wheeler:"Activa",
+                    Four_wheeler:"Polo",
+                    Three_wheeler:"auto"
+                }}
+    // console.log(prsn);
+    // console.log(prsn.vehicle.Four_wheeler);
+    // console.log(prsn['vehicle']['two_wheeler']);
+    // console.log(prsn.name+" has "+prsn.vehicle.Four_wheeler);
+
+    Object.entries(prsn).map((ele)=>{
+        console.log(ele[1].two_wheeler);
+        
+    })
+
+    let data = [
+        
+            {  
+            "id":1,
+            "name":"fitsname",
+            "address":"sdnfjksfdhfshgu"
+            },
+            {  
+            "id":2,
+            "name":"secoondname",
+            "address":"sdnfjksfdhfshgu"
+            },
+            {  
+            "id":3,
+            "name":"thirdname",
+            "address":"sdnfjksfdhfshgu"
+            }
+        ]
+        // console.log(data[0].name);
+
+        HTMLDATA=''
+
+        data.forEach(element => {
+            console.log(element);
+        HTMLDATA+=`
+                <ul>
+                    <li>${element.id}</li>
+                    <li>${element.name}</li>
+                    <li>${element.address}</li>
+                </ul>
+
+        `
+        });
+        document.getElementById('demo').innerHTML = HTMLDATA;
+    
+</script>

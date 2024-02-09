@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+// class : class is  a template for javascript Object
+// Object : it allocated class memory
+
+class Demo{
+   constructor()
+   {
+    let a ="hello"
+    console.log(a);
+   }
+}
+let obj = new Demo();
+// console.log(obj);
+
+
+//with para
+// class Name{
+//     constructor(fname,lname)
+//     {
+//         this.fname = "John"
+//         this.lname = "Doe"
+//     }
+// }
+// let ob = new Name()
+// console.log(ob.fname);
+// console.log(ob.lname);
+
+
+// with added method
+class Name{
+    constructor(fname,lname)
+    {
+        this.fname = "John"
+        this.lname = "Doe"
+    }
+    age()
+    {
+      console.log("My age is 25");
+    }
+}
+let ob = new Name()
+console.log("My First Name is "+ob.fname+" Last name is "+ob.lname+" and my age is ");
+console.log(ob.age());
+
+
+class Car{
+    constructor(name,age)
+    {
+        this.name = name
+        this.age = age
+    }
+}
+let o = new Car("POLO",6)
+console.log(o.name);
+console.log(o.age);
+</script>

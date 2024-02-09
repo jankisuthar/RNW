@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .img1
+        {
+            position: relative;
+            top:500px;
+            left: 500px;
+            z-index: 1;
+        }
+        .img2{
+            position: absolute;
+            top:400px;
+            left: 400px;
+            z-index:0;
+        }
+        .img3
+        {
+            position: absolute;
+            top:600px;
+            left: 600px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/bg.jpg" alt="" class="img1">
+    <img src="img/bg2.jpg" alt="" class="img2">
+    <img src="img/india.jpg" alt="" class="img3">
+</body>
+</html>

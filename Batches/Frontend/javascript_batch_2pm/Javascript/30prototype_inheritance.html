@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+      function Person(fname,lname)
+    {
+        this.fname = fname
+        this.lanme = lname
+    }
+    const prsn = new Person("Angella","Christan")
+
+    function Student(fname,lname,age,school)
+    {
+        Person.call(this,fname,lname)
+        this.age = age
+        this.school=school
+    }
+    let customer =  new Student("john","doe",25,"Red & White")
+    console.log(customer);
+</script>

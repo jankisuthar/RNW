@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: linear-gradient(#D0885C,#C46429);
+    height: 150px;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+
+}
+.menus{
+    margin: 0px 10% 0px 10%;
+    background-color: red;
+   height: 170px;
+   border-bottom: 7px solid #C46429;
+  
+}
+.logo
+{
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+.menu{
+    float: left;
+    width: 60%;
+    padding-left: 500px;
+    
+}
+.menu ul{list-style-type:
+     none;margin-top:
+     50px;}
+.menu ul li{display: inline-block;
+     padding: 7px 10px;
+    }
+.menu ul li a{color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;}
+.cart{float: left;
+    width: 20%;
+    margin-top: 50px;
+    padding-left: 250px;}
+.cart i{color: #FAAF18;
+    font-size: 30px;}

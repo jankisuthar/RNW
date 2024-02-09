@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <table border="1" align="center">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text"  onblur="checkdata(this,'name')" onkeypress="NameCheck(this,'nameError')">
+            <span id="name"></span>
+            <span id="nameError"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email"  onblur="checkdata(this,'email')" onkeypress="EmailCheck(this,'emailError ')">
+                <span id="email"></span>
+                <span id="emailError"></span>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password"  onblur="checkdata(this,'pwd')" onkeypress="PwdCheck(this,'pwdError')">
+                <span id="pwd"></span>
+                <span id="pwdError"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="number"  onblur="checkdata(this,'number')" onkeypress="MobileCheck(this,'numberError')">
+                <span id="number"></span>
+                <span id="numberError"></span>
+            
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"> <input type="submit" name="submit" value="submit"></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="validate.js"></script>

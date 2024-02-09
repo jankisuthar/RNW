@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+main {
+  height: 2000px;
+  background: #000;
+  padding: 2rem;
+}
+
+main>a {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.cursor,
+.cursor2,
+.cursor3{
+  position: fixed;
+  border-radius: 50%;	
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  transition: all .3s linear;
+}
+.cursor {
+  background-color: #fb0404;
+  z-index: 109;
+  height: 2px;
+  width: 2px;
+}
+.cursor2,
+.cursor3{
+  height: 50px;
+  width: 50px;
+  z-index: 108;
+  transition: all 0.3s ease-out;
+}
+.cursor2.hover,
+.cursor3.hover {
+  transform: scale(1.4) translateX(-35%) translateY(-35%);
+  border: none;
+  background: transparent;
+}
+
+.cursor2.hover {
+  background: rgba(255,255,255,0.3);
+}
+
+
+.ball {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  z-index: 100;
+  transition: all .3s linear;
+}
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <!-- <a href="#" class="hover-target">Hover</a> -->
+      </main>
+    <div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2">					
+  <div class="ball"></div>
+</div>
+<div class='cursor3' id="cursor3"></div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+<script>
+    $("body").on("mousemove", function (n) {
+       
+  a.css({'left' : n.clientX + "px" }); 
+  a.css({'top' : n.clientY + "px" }); 
+  b.css({'left' : n.clientX + "px" }); 
+  b.css({'top' : n.clientY + "px" }); 
+  c.css({'left' : n.clientX + "px" }); 
+  c.css({'top' : n.clientY + "px" });
+});
+
+var a = $("#cursor"),
+    b = $("#cursor2"),
+    c = $("#cursor3");
+
+function n(t) {
+  b.addClass("hover"); 
+  c.addClass("hover");
+}
+
+function s(t) {
+  b.removeClass("hover"); 
+  c.removeClass("hover");
+}
+
+s();
+
+$(".hover-target").on('mouseover', n );
+$(".hover-target").on('mouseout', s );
+
+</script>

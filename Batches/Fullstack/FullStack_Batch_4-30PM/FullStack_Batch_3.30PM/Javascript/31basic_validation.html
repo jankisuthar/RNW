@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" onsubmit="return ValidData()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" id="gender" value="male">Male
+                    <input type="radio" name="gender" id="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby:</td>
+                <td><input type="checkbox" name="chk" id="chk" value="cricket">Cricket
+                    <input type="checkbox" name="chk" id="chk" value="hocky">Hocky
+                </td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function ValidData()
+    {
+        let name = document.getElementById('name').value;
+        if(name=="")
+        {
+            alert("Please Enter name!")
+            document.getElementById('name').focus();
+            return false;
+        }
+        let email = document.getElementById('email').value;
+        if(email=="")
+        {  
+            alert("Please Enter email!")
+            document.getElementById('email').focus();
+            return false;
+        }
+        let pwd = document.getElementById('pwd').value;
+        if(pwd=="")
+        {
+            alert("Please Enter password!")
+            document.getElementById('pwd').focus();
+            return false;
+        }
+       
+        if(document.getElementById('gender').form.gender[0].checked==false && document.getElementById('gender').form.gender[1].checked==false)
+        {
+            alert("Please select gender!")
+            return false;
+        }
+        if(document.getElementById('chk').form.chk[0].checked==false && document.getElementById('chk').form.chk[1].checked==false)
+        {
+            alert("Please select Hobby!")
+            return false;
+        }
+        let date = document.getElementById('date').value;
+        if(date=="")
+        {
+            alert("Please select date!")
+            
+            return false;
+        }
+    }
+</script>

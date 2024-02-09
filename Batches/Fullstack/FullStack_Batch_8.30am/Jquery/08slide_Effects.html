@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ut, laborum, ratione ipsum, dolor dicta velit voluptas quidem neque doloribus molestias nesciunt quia in unde ducimus quod nihil quae! Consequuntur alias exercitationem et? Laudantium nulla eos recusandae laborum perspiciatis veniam placeat accusantium? Amet rem consequuntur accusantium quo totam facilis, molestiae aut placeat iusto magnam? Et qui ullam ipsum! Cupiditate suscipit eaque sint hic reprehenderit deleniti at laboriosam dolores quae dolore molestiae, amet quod tempore consequuntur inventore eligendi totam accusantium nulla ratione dignissimos earum? At deleniti, beatae saepe eum maiores reprehenderit, ea incidunt voluptate, veritatis officia quos magnam a error. Eum officia maiores ad ipsam sequi incidunt in quia eos totam nobis, odit cum dolor perferendis magnam voluptate suscipit sunt vel exercitationem natus repellendus impedit! Mollitia animi consequuntur excepturi tempore recusandae dolore id iste quo voluptates unde ab dolorem, exercitationem non magni, repudiandae temporibus voluptatum at! Enim adipisci debitis minima numquam excepturi quaerat quas quisquam explicabo, qui libero maiores, a id, vero molestiae autem aperiam eum possimus architecto placeat rerum voluptate nesciunt voluptatibus! Quis dignissimos voluptatem aliquid, nihil totam temporibus nam sapiente, qui quasi impedit laudantium mollitia ea. Minus fugit ex impedit atque, iure quae facilis esse, facere laboriosam, animi ut.</p>
+    <button class="out">slide Up</button>
+    <div style="display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, veniam quo, libero nihil tenetur magnam adipisci odit inventore voluptate tempora incidunt provident culpa quibusdam illo? Facilis, tempora pariatur, cumque ea non temporibus ipsa qui consequuntur iste aperiam iusto similique nulla, quis ad quas quisquam sint unde officiis optio aliquid ipsam distinctio! Possimus accusamus temporibus dicta accusantium. Deleniti, nulla hic animi expedita esse odit dicta aliquam. Soluta numquam qui eos, illum facilis fugit perferendis cum? Nemo harum facilis inventore! Autem reprehenderit voluptates nobis repellendus dolorum aliquid, unde nulla veritatis consequatur odio asperiores aspernatur totam, dolores optio alias inventore similique adipisci quaerat vitae molestias ad aliquam placeat maxime iusto. Saepe, laboriosam! Molestiae voluptatem voluptatum eligendi illum? Quo reiciendis veritatis porro iste repudiandae optio ea temporibus, ipsam totam. Magni ipsum aliquam nostrum, repudiandae repellat corporis quo ipsam. Reprehenderit ab, enim minus omnis fuga minima ratione? Autem iste sit similique adipisci fugit minima sed debitis dolores. Dolor, similique? Expedita, ab dolore harum veniam ducimus nulla? Dolore corrupti saepe quos, distinctio temporibus nemo blanditiis omnis eos quaerat soluta harum nulla sapiente accusantium laborum maxime, fugiat accusamus! Vero id pariatur dolore laborum! Quod natus, dolor doloribus architecto hic laboriosam velit nostrum ea sequi, repellendus ex impedit.</div>
+    <button class="down">slide down</button>
+    <br><br>
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi impedit debitis sint a pariatur, autem animi qui consequatur recusandae necessitatibus optio, culpa, deserunt ratione explicabo laborum nihil esse cupiditate. Rerum totam alias a consectetur! Nihil, aspernatur? Tenetur expedita laborum placeat quae deserunt facilis neque eos dignissimos libero error id, quasi repellat temporibus! Vel nesciunt vitae, nihil illum assumenda quia, recusandae repellat quos, consequuntur vero aperiam alias ipsum. Quaerat qui eos consequatur, officia ex minima, nobis itaque at sit culpa necessitatibus cumque doloribus tempore reiciendis distinctio eum, labore voluptatibus porro. Nihil ea unde sequi, ab laboriosam ex facere commodi aut perferendis libero, perspiciatis excepturi reprehenderit explicabo in alias distinctio architecto voluptatem eligendi quae sit quo possimus veritatis. Cum distinctio maiores laborum aspernatur placeat fugiat nihil aut reprehenderit consequatur, dicta et quaerat illo sapiente modi voluptatum suscipit odio, architecto delectus quos voluptates similique non vitae? Voluptate quod minus corrupti, amet dolore quasi distinctio exercitationem vel quisquam molestias ducimus illum temporibus aperiam quis commodi perferendis ad cupiditate porro eligendi. Perspiciatis labore, hic, tenetur maiores error, molestias quod eligendi eos consectetur doloribus laboriosam reiciendis. Doloribus aperiam consectetur tempora ab voluptate ullam praesentium commodi? Illum molestiae voluptatibus doloremque eius tempora minima iste alias rerum ex!</span>
+    <button class="toggle">slide Toggle  </button>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        //slideup
+        $('.out').click(function(){
+            $('p').slideUp(2000)
+        })
+
+        //slide down
+        $('.down').click(function(){
+            $('div').slideDown(2000)
+        })
+
+        //slide toggle
+        $('.toggle').click(function(){
+            $('span').slideToggle(2000)
+        })
+    })
+</script>

@@ -1,0 +1,15 @@
+.main{
+    /* height: 300px; */
+    width: 300px;
+    border: 2px solid;
+    margin: 20px;
+}
+.main img{
+    height: 200px;
+    width: 300px;
+}
+.products{
+    display: flex;
+    justify-content: center;
+   
+}

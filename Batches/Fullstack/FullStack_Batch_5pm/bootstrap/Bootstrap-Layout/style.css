@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.main-banner{
+    background:linear-gradient(rgba(34, 33, 33, 0.7),rgba(34, 33, 33, 0.7)), url("img/background-1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 900px;
+}
+.menu-item{
+    color: white!important;
+    text-transform: uppercase!important;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+.navbar-brand img{
+    width: 100px;
+    margin-left: 250px;
+}
+.main-banner h1,.banner-p{
+    color: white;
+    margin-top: 150px;
+    /* text-align: center; */
+    margin-left: 400px;
+}
+.arrow{
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 250px;
+}
+.arrow i{font-size: 30px;transform: rotate(-30deg);transition: 0.5s;}
+.arrow:hover i{
+    transform: rotate(30deg);
+    transition: 0.5s;
+}
+.dropdown-item:hover{
+    background-color: black!important;
+    color: white!important;
+   
+}
+.dropdown-menu 
+{
+    background-color: transparent!important;
+    border: none!important;
+}
+.car-age{
+    position: absolute;
+    top:800px;
+}
+.car
+{
+    border-right:2px solid;
+    border-left:2px solid;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.main-park{
+    background-color: #2b2b2b;
+    height: 1200px;
+}
+.park{
+    color: white;
+    padding-top: 200px;
+    padding-left: 450px;
+}
+.park-arrow{
+    transform: rotate(-30deg);
+
+}
+.cars
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.car-card {
+   color: white; 
+   padding: 30px;
+   width: 25%;
+   border: 1px soild transparent;
+   transition: 0.2s;
+}
+.car-card img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.car-card:hover{
+    border: 1px solid white;
+  
+   
+}

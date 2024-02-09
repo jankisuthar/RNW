@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>Good Morning!</h1>
+    <div id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, laboriosam, aperiam, debitis voluptas rem dolore nesciunt ad autem animi eum quos deserunt tenetur? Ut necessitatibus hic quae praesentium delectus architecto omnis ex fuga similique exercitationem error odio beatae iusto ea, nobis magnam. Nam optio magnam pariatur sequi accusantium tenetur. Praesentium, possimus distinctio quis beatae necessitatibus quaerat illo doloribus tempora facere amet nulla veniam dignissimos architecto, quam alias ipsam odio. Libero nobis quisquam nostrum culpa illum vitae alias? Voluptas ut, iusto aliquam sunt voluptatibus eius modi sapiente eum earum ex saepe, magnam ab unde repellendus accusantium necessitatibus, quod natus assumenda nemo corrupti inventore quisquam facilis. Officiis officia eligendi aut quod non laboriosam! Ducimus sint molestias quas officia quos aliquam consequuntur enim exercitationem dignissimos nemo totam asperiores, consequatur perferendis ad voluptates, alias eius quia voluptatum maxime molestiae. Porro, consequatur quidem rem iure doloremque error eos doloribus consequuntur vel iste iusto quia et sed cum ab quam quae voluptas reprehenderit suscipit sapiente labore, fuga pariatur repellendus aut? Dolor, assumenda quam. Accusamus expedita esse impedit hic nihil in, similique asperiores molestiae! Labore, ducimus aspernatur reiciendis earum sunt minus adipisci odio, unde sint facere blanditiis? Voluptatibus temporibus amet quas autem et, distinctio quasi facilis maiores.</div>
+
+    <p class="test">This is para</p>
+</body>
+</html>
+<script>
+    //tag slector
+    $(document).ready(function(){
+        // $('h1').css('color','red')
+        // $('h1').css('background','yellow')
+        $('h1').css({'color':'red','backgroundColor':'yellow','textAlign':'center'})
+    })
+
+    //id Selctor
+    $(document).ready(function(){
+        $('#demo').css('fontSize','30px')
+    })
+
+    //class selector
+    $(document).ready(function(){
+        $('.test').css({'color':'blueviolet',"fontSize":"50px",'textAlign':'center'})
+    })
+</script>

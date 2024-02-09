@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @media only screen and (max-width:600px)
+        {
+            .container{
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+           justify-content: center;
+        }
+        .container div{ 
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+        }
+        }
+          @media only screen and (min-width:600px)
+        {
+            .container{
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+        }
+        }
+          @media only screen and (min-width:768px)
+        {
+            .container{
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+        }
+        }
+          @media only screen and (min-width:992px)
+        {
+            .container{
+            background-color: aqua;
+            display: flex;
+        }
+        .container div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+        }
+        }
+        @media only screen and (min-width:1200px)
+        {
+            .container{
+            background-color: aqua;
+            display: flex;
+        }
+        .container div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            margin: 50px;
+        }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

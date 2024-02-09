@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color: bisque;
+            padding: 20px;
+            font-size: 50px;
+            display: flex;
+          
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            flex-grow: 3;
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+            background-color: cornflowerblue;
+            flex-shrink: 5;
+        }
+        .four{
+            height: 200px;
+            width: 200px;
+            background-color: darkgreen;
+        }
+        #main>div{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="one">1</div>
+        <div class="two" >2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="one">5</div>
+        <div class="two" >6</div>
+        <div class="three">7</div>
+        <div class="four">8</div>
+        <div class="one">9</div>
+        <div class="two" >10</div>
+        <div class="three">11</div>
+        <div class="four">12</div>
+    </div>
+
+<br>
+<br>
+    <div id="main">
+        <div class="one" style="order: 3;">1</div>
+        <div class="two" style="order: 1;">2</div>
+        <div class="three" style="order: 4;">3</div>
+        <div class="four" style="order: 2;">4</div>
+    </div>
+</body>
+</html>

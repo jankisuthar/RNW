@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .one{
+        height: 200px;
+        width: 200px;
+        background-color: coral;
+        animation: test 2s;
+        position: relative;
+        animation-fill-mode: forwards;
+        /* animation-fill-mode: backwards; */
+        
+        
+        
+    }
+    @keyframes test {
+       0%{top:0px;left:0px;}
+       100%{top: 300px;left: 0px;}
+    }
+    .one:hover{
+        animation-play-state: paused;
+    }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

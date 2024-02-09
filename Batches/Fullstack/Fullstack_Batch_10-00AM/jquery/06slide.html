@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <button class="slideUp">SlideUp</button>
+    <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem culpa vero, doloremque est, ea eum itaque similique, exercitationem minus impedit architecto nisi tenetur! Doloremque fugiat repellat consectetur veniam beatae facere ipsam eum voluptates voluptatibus sit exercitationem quos pariatur, velit, perferendis cumque recusandae voluptate. Error sapiente incidunt at obcaecati corrupti molestias possimus? Nam commodi eum, earum cumque ullam similique porro voluptatibus impedit enim, esse consectetur itaque praesentium, ad ut? Ab, id veniam! Dolores perspiciatis quod aut illum deserunt, nemo a corrupti soluta consectetur voluptatem veniam totam corporis ex facere impedit ipsum nisi adipisci in recusandae asperiores animi ipsa libero. Quae.</div>
+    <br>
+    <button class="slidedown">SlideDown</button>
+    <div class="two" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem culpa vero, doloremque est, ea eum itaque similique, exercitationem minus impedit architecto nisi tenetur! Doloremque fugiat repellat consectetur veniam beatae facere ipsam eum voluptates voluptatibus sit exercitationem quos pariatur, velit, perferendis cumque recusandae voluptate. Error sapiente incidunt at obcaecati corrupti molestias possimus? Nam commodi eum, earum cumque ullam similique porro voluptatibus impedit enim, esse consectetur itaque praesentium, ad ut? Ab, id veniam! Dolores perspiciatis quod aut illum deserunt, nemo a corrupti soluta consectetur voluptatem veniam totam corporis ex facere impedit ipsum nisi adipisci in recusandae asperiores animi ipsa libero. Quae.</div>
+    <br>
+    <button class="toggle">slideToggle</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //slideup
+        $('.slideUp').click(function(){
+            $('.one').slideUp(1000)
+        })
+
+        //slidedown
+        $('.slidedown').click(function(){
+            $('.two').slideDown(1000);
+        })
+        //slidetoggle
+        $('.toggle').click(function(){
+            $('.two').slideToggle(1000);
+        })
+    })
+</script>

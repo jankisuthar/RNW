@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            color: red;
+            text-align: center;
+            background-color: darkgrey;
+        }
+        .two{
+            color: blueviolet;
+            background-color: aqua;
+            width: 300px;
+            text-align: center;
+            border: 2px solid;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">Good Morning!</h1>
+    <button class="clck">Click</button>
+    <br><br>
+    <h1 class="two">Have a Nice Day!</h1>
+    <button class="clk2">Click me to remove the CSS</button>
+    <br><br>
+    <h1 class="test">This is Toggle class method</h1>
+    <button class="clk3">Click me to toggle the CSS</button>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        //add class
+        $('.clck').click(function(){
+            $('#one').addClass('demo')
+        })
+
+        //remove class
+        $('.clk2').click(function(){
+            $('.two').removeClass('two')
+        })
+
+        //toggleclass
+        $('.clk3').click(function(){
+            $('.test').toggleClass('two')
+        })
+    })
+</script>

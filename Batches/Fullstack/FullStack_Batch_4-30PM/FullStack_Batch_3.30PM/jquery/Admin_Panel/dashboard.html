@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <style>
+      
+      #chart {
+    max-width: 650px;
+    margin: 35px auto;
+  }
+  #calendar {
+  max-width: 600;
+  margin: 40px auto;
+}
+    
+  </style>
+  
+
+
+ 
+<script>
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+      )
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+      )
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+      )
+  </script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  
+
+  <script>
+    // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+    // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+    var _seed = 42;
+    Math.random = function() {
+      _seed = _seed * 16807 % 2147483647;
+      return (_seed - 1) / 2147483646;
+    };
+
+
+    
+  </script>
+
+<script src='js/index.global.js'></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialDate: '2023-01-12',
+      initialView: 'timeGridWeek',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+      },
+      height: 'auto',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      selectable: true,
+      selectMirror: true,
+      nowIndicator: true,
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2023-01-01',
+        },
+        {
+          title: 'Long Event',
+          start: '2023-01-07',
+          end: '2023-01-10'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2023-01-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2023-01-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2023-01-11',
+          end: '2023-01-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2023-01-12T10:30:00',
+          end: '2023-01-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2023-01-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2023-01-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2023-01-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2023-01-12T20:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2023-01-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2023-01-28'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+  </script>
+</head>
+<body>
+    <!-- sidebar start -->
+    <div id="sidebar">
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="category.html">Category</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+    
+        <div id="sidebar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+      </div>
+    
+      <div class="love">
+    <!-- header start -->
+        <div class="header">
+            <div class="serach">
+                <input type="text" placeholder="Search" class="form-control" >
+            </div>
+            <div class="setting">
+                <span><i class="fa-regular fa-bell"></i> <span> 
+                <i class="user"><img src="img/avatar-1.jpg" alt="user"></i>
+            </div>
+        </div>
+    <!-- header end -->
+        <!-- chart start -->
+        <div id="chart"></div>
+        <!-- chart end -->
+
+        <!-- calender start -->
+        <div class="container">
+        <div id='calendar'></div>
+      </div>
+        <!-- calender end -->
+    <!-- footer start -->
+    <hr>
+    <div class="footer">
+        <h2 class="text-center text-white">CopyRight@2023 by RNWA3</h2>
+    </div>
+    <!-- footer end -->
+
+      </div>
+    
+    
+    <!-- sidebar end -->
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dc4641f860664c6e824b093274f50291"}'></script>
+<script>
+  // sidebar start
+    $(document).ready(function() {
+  $('#sidebar-btn').on('click', function() {
+    $('#sidebar').toggleClass('visible');
+  });
+});
+// sidebar end
+</script>
+<script>
+      
+
+      // chart start
+  var options = {
+    series: [{
+    name: 'series1',
+    data: [31, 40, 28, 51, 42, 109, 100]
+  }, {
+    name: 'series2',
+    data: [11, 32, 45, 32, 34, 52, 41]
+  }],
+    chart: {
+    height: 350,
+    type: 'area'
+  },
+  dataLabels: {
+    enabled: false
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  xaxis: {
+    type: 'datetime',
+    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+  },
+  tooltip: {
+    x: {
+      format: 'dd/MM/yy HH:mm'
+    },
+  },
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
+
+// chart end
+
+
+</script>
+

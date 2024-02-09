@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // ProtoType Inheritance
+   function Customer(fname,lname)
+   {
+    this.fname = fname
+    this.lname = lname
+   }
+    function Student(fname,lname,age)
+    {
+        Customer.call(this,fname,lname)
+        this.age = age;
+    }
+    Student.prototype = new Customer;
+    let obj = new Student("john","doe",23)
+    console.log(obj);
+
+</script>

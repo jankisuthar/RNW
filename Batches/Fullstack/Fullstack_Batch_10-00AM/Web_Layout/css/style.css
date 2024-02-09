@@ -1,0 +1,520 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+header
+{
+    width: 100%;
+}
+.main-header
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+}
+.logo-flex
+{
+    display: flex;
+}
+.logo-txt{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.logo-txt strong
+{
+    color: #5d52ba;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.logo-txt span{
+    font-size: 15px;
+    color: #f65129;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 20px 20px 10px 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.active{
+    color: #f65129!important;
+}
+.reg
+{
+    border: 0;
+    outline: 0;background-color: white;
+    color: grey;
+    font-size: 20px;
+}
+.reg:hover{
+    color: #f65129;
+}
+.login
+{
+    margin-left: 20px;
+    background-color: #f65129;
+    padding: 15px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+.login:hover{
+    background-color: aqua;
+}
+.main-banner{
+    margin-top: 30px;
+    background: url('../img/close-up-young-business-team-working.jpg');
+    /* background-size: cover; */
+    height:620px;
+    position: relative;
+}
+.banner-overlay
+{
+    background-color:#5d52ba ;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+.banner-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top:200px;
+    color: white;
+}
+
+.banner-left h1{
+    font-size: 55px;
+    margin-top: 10px;
+}
+.banner-left button{
+    margin-top: 20px;
+    color: #0dcaf0;
+    border:2px solid #0dcaf0;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 30px;
+   
+}
+.banner-left button:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+.search-form
+{
+    background-color: #7f73eb;
+    padding: 30px;
+    border-radius: 20px;
+}
+.search-form h2{
+    font-size: 35px;
+
+}
+.search-input
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.search-input input
+{
+    padding: 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    /* margin-left: 20px; */
+}
+.inp{
+    margin-left: 10px;
+}
+.find-btn
+{
+    margin-top: 20px;
+    width: 600px;
+    border: 0;
+    padding: 15px;
+    outline: 0;
+    border-radius: 30px;
+    background-color: #5d52ba;
+    color: white;
+    font-size: 18px;
+}
+.find-btn:hover{
+    background-color: #0dcaf0;
+}
+.keyword
+{
+    margin-top: 20px;
+}
+.keyword button
+{
+    background-color: transparent;
+    padding: 7px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    outline: 0;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.keyword button:hover
+{
+    background-color: white;
+    color: #5d52ba;
+}
+.categories
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.all-cat
+{
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+   
+}
+.cat{
+    width: 10%;
+    background-color:#5d52ba ;
+    border-radius: 50%;
+    padding: 70px;
+    margin: 10px;
+    border: 10px solid #7f73eb;
+    color: white;
+    font-size: 12px;
+    position: relative;
+}
+.cat:hover{
+    border: 10px solid whitesmoke;
+}
+.number
+{
+    position: absolute;
+    background-color: #0dcaf0;
+    padding: 15px;
+    color: white;
+    border-radius: 60%;
+    top:0px;
+    left: 120px;
+}
+.intro{
+    /* width: 100%; */
+    margin: 50px 200px 50px 200px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+}
+.julia
+{
+    width: 20%;
+    /* background-color: #0dcaf0; */
+   
+}
+.julia img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 400px;
+}
+.intro-gotto
+{
+    width: 60%;
+    background-color: #0dcaf0;
+    padding: 50px;
+    color: white;
+    margin-left: 20px;
+    height: 400px;
+
+}
+.insta-gotto
+{
+    width: 20%;
+    margin-left: 20px;
+
+}
+.insta-gotto img{
+    height:400px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.intro-gotto h2{
+    font-size: 40px;
+}
+.intro-gotto p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.intro-gotto button
+{
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+.intro-gotto button:hover{
+    background-color: white;
+    color: #f65129;
+}
+.intro-gotto a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+.featured-job{
+    width: 100%;
+    /* text-align: center; */
+}
+.jobs
+{
+    /* width: 100%; */
+    /* background-color: #0dcaf0; */
+    margin-top: 30px;
+    margin: 20px 200px 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+.jobs:hover
+{
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 10px 10px white;
+}
+.job-logo{
+    width: 10%;
+    padding: 20px;
+}
+.job-logo img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+.job-txt
+{
+    /* background-colo  r: #5d52ba; */
+    width: 60%;
+   
+}
+.job-txt h3{
+    font-size: 40px;
+  
+}
+.feature-txt{
+    text-align: center;
+}
+.feature-txt h2{
+    font-size: 45px;
+}
+.feature-txt p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.job-txt i,a{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.job-txt a{
+    text-decoration: none;
+}
+.int
+{
+    background-color: #5d52ba;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+}
+.int:hover{
+    background-color: #f65129;
+}
+.free
+{
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 30px;
+    color: #5d52ba;
+}
+.apply
+{
+    background-color: #f65129;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+
+}
+.job-button
+{
+    padding: 20px;
+}
+.recent-jobs{
+    width: 100%;
+    padding: 100px;
+}
+.recent-main
+{
+    display: flex;
+    justify-content: space-around;
+}
+.recent
+{
+margin-top: 20px;
+    width: 30%;
+    background-color: transparent;
+    border: 1px solid lightslategray;
+    border-radius: 20px;
+}
+.recent img{
+    border-radius: 20px;
+}
+.recent:hover
+{
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+}
+.recent h3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    
+}
+.recent h3{
+    margin-top: 10px;   
+}
+.sale{
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+
+}
+.salesforce{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.salesforce span{
+    margin-left: 20px;
+}
+.recent i{
+    margin-left: 20px;
+}
+.apply{
+    margin-left: 250px;
+}
+hr{
+    width: 350px;
+   margin-left: 80px;
+  
+}
+.k10{
+    width: 100%;
+    background: url('../img/millennial-group-young-businesspeople\ \(1\).jpg');
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    
+}
+.k10-overlay
+{
+    background-color:#f65129 ;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.k10-left {
+    width:40%;
+    color: white;
+}
+.k10-left h2{
+   font-size: 45px;
+}
+.k10-left p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.k10-right button{
+   background-color: transparent;
+   color: white;
+   padding: 20px;
+   outline: none;
+   border: 2px solid white;
+   border-radius: 30px;
+   font-size: 18px ;
+}
+.k10-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.footer-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+   
+}
+.footer-icons i{
+    margin-top: 20px;
+    color: #5d52ba;
+}
+.footer-2 h3{
+    margin-top: 20px;
+    
+}
+.footer-2 a{
+    font-size: 20px;
+    text-decoration:  none;
+    margin-top: 20px;
+}
+.newsletter{
+    margin-top: 20px;
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.newsletter input{
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+}

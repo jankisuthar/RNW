@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="stop()">Click to Stop</button>
+</body>      
+</html>
+<script>
+    let set =setInterval(test)
+    function test()
+    {
+      let x = document.body
+      x.style.backgroundColor=x.style.backgroundColor=="red"?"green":"red";   
+    }
+    function stop(){
+        clearInterval(set)
+    }
+</script>

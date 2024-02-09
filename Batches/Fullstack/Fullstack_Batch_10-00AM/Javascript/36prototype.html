@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Person(fname,lname)
+    {
+        this.fname = fname
+        this.lname = lname
+    }
+    const prsn = new Person("Jayesh","Aswani")
+    console.log(prsn);
+    console.log(Person.prototype);
+    Person.prototype.age=function(fname,lname){
+       return this.fname+" "+this.lname
+        console.log(this.fname+" "+this.lname);
+        
+    }
+    console.log(Person.prototype.age("hello","hi"));
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function Number(...data)
+    {
+        let sum = 0;
+        for(let i of data)
+        {
+            sum+=i;
+        }
+        return sum;
+    }
+    console.log(Number(2,2));
+    console.log(Number(2,2,4));
+    console.log(Number(2,2,6,8));
+    
+
+    let arr = ["Apple","Orenage","Kiwi","Mango"]
+    let [one,two,...three]=arr
+    console.log(one);
+    console.log(three);
+</script>

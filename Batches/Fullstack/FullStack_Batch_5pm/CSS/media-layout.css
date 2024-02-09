@@ -1,0 +1,211 @@
+
+@media only screen and (min-width:992px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header
+    {
+        width: 100%;
+        padding: 20px;
+        border: 5px solid red;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        background-color: grey;
+    }
+    .left{
+        width: 30%;
+    }
+    .box{
+        width:98%;
+        border: 2px solid red;
+        padding: 100px;
+        margin: 10px;
+    }
+    .right{
+        width: 70%;
+        border: 2px solid red;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+        border: 5px solid red;
+        padding: 50px;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header
+    {
+        width: 100%;
+        padding: 20px;
+        border: 5px solid red;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        display: inline-block;
+        background-color: grey;
+    }
+    .left{
+        width: 100%;
+    }
+    .box{
+        width:98%;
+        border: 2px solid red;
+        padding: 100px;
+        margin: 10px;
+    }
+    .right{
+        width:98%;
+        border: 2px solid red;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+        border: 5px solid red;
+        padding: 50px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header
+    {
+        width: 100%;
+        padding: 20px;
+        border: 5px solid red;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        display: inline-block;
+        background-color: grey;
+    }
+    .left{
+        width: 100%;
+    }
+    .box{
+        width:98%;
+        border: 2px solid red;
+        padding: 100px;
+        margin: 10px;
+    }
+    .right{
+        width:98%;
+        border: 2px solid red;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+        border: 5px solid red;
+        padding: 50px;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header
+    {
+        width: 100%;
+        padding: 20px;
+        border: 5px solid red;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        display: inline-block;
+        background-color: grey;
+    }
+    .left{
+        width: 100%;
+    }
+    .box{
+        width:98%;
+        border: 2px solid red;
+        padding: 100px;
+        margin: 10px;
+    }
+    .right{
+        width:98%;
+        border: 2px solid red;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+        border: 5px solid red;
+        padding: 50px;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:1200px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header
+    {
+        width: 100%;
+        padding: 20px;
+        border: 5px solid red;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        background-color: grey;
+    }
+    .left{
+        width: 30%;
+    }
+    .box{
+        width:98%;
+        border: 2px solid red;
+        padding: 100px;
+        margin: 10px;
+    }
+    .right{
+        width: 70%;
+        border: 2px solid red;
+        margin: 10px;
+    }
+    img{
+        max-width: 100%;
+        position: relative;
+    }
+    .right p{
+        position: absolute;
+        top:200px
+    }
+    footer{
+        width: 100%;
+        border: 5px solid red;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    
+
+}

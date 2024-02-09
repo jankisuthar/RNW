@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 200px;
+            border: 1px solid;
+        }
+        #one{
+                position: relative;
+                left: 300px;
+                top: 300px;
+                z-index: 5;
+        }   
+        #two{
+            position: relative;
+            left: 250px;
+            top: 250px;
+            z-index: 1;
+           
+        }
+        #three{
+            position: relative;
+            left: 200px;
+            top:200px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/one.jpg" alt="" id="one">
+    <img src="img/two.jpg" alt="" id="two">
+    <img src="img/three.jpg" alt="" id="three">
+</body>
+</html>

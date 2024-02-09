@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Closure : Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+
+        function Outerfunc(){
+            let counter = 0;
+            function InnerFunc(){
+                return counter+=1
+            }
+            return InnerFunc;
+        }
+        let data = Outerfunc()
+        console.log(data());
+        console.log(data());
+        console.log(data());
+        console.log(data());
+    </script>
+</body>
+</html>

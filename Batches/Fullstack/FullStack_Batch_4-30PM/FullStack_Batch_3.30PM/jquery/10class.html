@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: grey;
+            border: 2px solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div >THis is div</div>
+    <button class="add">Add CSS</button>
+
+    <p class="one">This is p tag</p>
+    <button class="remove">Remove CSS/Toggle</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('.add').click(function(){
+            $('div').addClass('one');
+        })
+
+        // $('.remove').click(function(){
+        //     $('p').removeClass('one');
+        // })
+
+        $('.remove').click(function(){
+            $('p').toggleClass('one');
+        })
+    })
+</script>

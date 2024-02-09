@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-para{
+    background-color: #103178;
+    color: #ffc800;
+    padding: 5px;
+}
+.logo{
+    color: #103178;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+    color: #103178!important;
+}
+.navbar i{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #103178;
+}
+.main-header{
+    background-image: url(img/background11.jpg);
+    /* height: 800px; */
+    width: 100%;
+   background-position: 50% 50%;
+}
+.header{
+    padding: 150px 0px 150px 0px;
+}
+.left-header h3{
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+}
+.left-header p{
+    color: white;
+    font-size: 20px;
+
+}
+.price{
+    font-size: 60px;
+    color: #ffc800;
+}
+.sub-price{
+    color: #bbbbbb;
+    font-size: 30px;
+}
+.shop{
+    background-color: #ffc800;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 2px solid;
+    outline: none;
+    padding: 15px;
+    width: 200px;
+}
+.coin{
+    width: 150px;
+    height: 150px;
+    background-color: #ffc800;
+    border-radius: 50%;
+    margin-top: 150px;
+}
+.coin p{
+    font-size: 22px;
+    color: #103178;
+    font-weight: bold;
+    margin-top:20px ;
+    margin-bottom: 0px!important;
+}
+.coin h3{
+    font-size: 50px;
+    color: #103178;
+}
+.categories h2{
+    color: #103178;
+    
+}
+.category{
+    background-color: #f0f2f5;
+    margin: 10px;
+}
+
+.row>*{
+    padding-right: 0px!important;
+}
+.more{
+    background-color: white;
+    color: #103178;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 70px;
+}
+.category img{
+    height: 170px;
+    width: 250px;
+    
+}
+.main-icons i{
+    font-size: 50px;
+    color: #103178;
+    margin: 25px;
+}
+.main-icons h5{
+    margin-top: 10px;
+    margin: 25px;
+}
+.Antibacterial{
+    background-color: #f0f2f5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.glove{
+    color: #103178;
+}
+.glove-para{font-size: 22px; color: #103178;}
+.shield{margin-left: 100px;color: #103178;}
+.shop:hover{
+    background-color: white;
+    color: #ffc800;
+    border: 2px solid #ffc800;
+    transition: 0.5s;
+
+}
+.videoplay
+{
+    font-size: 50px;
+    background-color:transparent;
+    color:#103178;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left:280px;
+    top:125px;
+    width: 100px;
+    text-align: center;
+}
+.play{
+    position: relative;
+}
+.Featured .row>*{
+    padding-left: 0px!important;
+    
+}
+.card{
+    border: 1px solid #efefef!important;
+    width: 100%;
+    overflow: hidden;
+}
+.card img{
+    height: auto;
+    object-fit: cover!important;
+}
+.fa-star{
+    color: #ffc800;
+}
+.card:hover img{
+    object-fit: cover!important;
+    display: block!important;
+    cursor: pointer;
+    width: 100%!important;
+    transform: scale(1.1);
+    transition: 0.5s;
+    overflow: hidden!important;
+    height: auto;
+}
+.effective{
+    background-color:#f0f2f5 ;
+}
+.effective p{
+    font-size: 18px;
+}
+.effective i{
+    font-size: 50px;
+}
+.text{
+    color: #5b6c8f;
+}
+.blog img{
+    height: 200px;
+    width: 350px;
+}
+.reviews{
+    background-color:#f0f2f5 ;
+}
+.review{width: 24%!important;}
+.fa-quote-right{color: #ffc800;margin-right: 10px;}
+.myinpt::placeholder{color: #103178;padding: 10px!important;}
+.myinpt{border: none!important; outline: none!important;border-radius: 50px!important;background-color: #f0f2f5!important;}
+footer{
+    background-color: #103178;
+}

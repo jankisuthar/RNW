@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="quotes.js"></script>
+</head>
+<body>
+    <table border="1" align="center">
+        <th>Id</th>
+        <th>Quotes</th>
+        <th>Author</th>
+        <tbody id="dispdata"></tbody>
+    </table>
+</body>
+</html>
+<script>
+    // console.log(details);
+    HTMLDATA=''
+    details.forEach(ele => {
+        console.log(ele);
+        HTMLDATA+=`
+            <tr>
+                <td>${ele.id}</td>
+                <td>${ele.quotes}</td>
+                <td>${ele.Author}</td>
+            </tr>
+        `
+        document.querySelector('#dispdata').innerHTML = HTMLDATA
+    });
+</script>   

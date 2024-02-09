@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            display: none;
+        }
+        .two
+        {
+            border: 2px solid red;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum culpa saepe sunt cupiditate. Nulla, voluptas? Laborum consequatur distinctio tempora laboriosam sint officiis alias eveniet blanditiis similique perspiciatis quis cum ab minus quas itaque nostrum sequi sit accusantium libero, recusandae odio! Officia facere distinctio aut fugit dolorem minima possimus voluptatum reiciendis dolor eos illum vitae doloremque quod ipsum laboriosam quos labore tenetur voluptatem, at, dolores eveniet quia sit molestias dicta? Et, voluptatum. Praesentium, et ratione? Quae ipsum neque adipisci tempore aut exercitationem facilis. Assumenda facere cupiditate mollitia quis sapiente autem repudiandae reiciendis praesentium similique ipsum, alias doloribus eos eligendi, ex aperiam! Vitae illo veniam, ducimus alias minus minima delectus repellat cumque fugit ea, asperiores dolore omnis a! Aperiam, architecto odio quas optio non ratione quasi maiores sit earum aliquam, vitae inventore labore unde nesciunt sunt magni illum facilis id libero quod accusantium obcaecati laborum, dolor doloremque. Hic atque doloremque consequatur exercitationem architecto ullam voluptatibus quasi ut aliquid mollitia magni deserunt sit perspiciatis, necessitatibus non culpa quos ratione eveniet officiis rem dignissimos molestiae voluptatem reiciendis earum. Dolorum aspernatur voluptas delectus culpa assumenda, laboriosam dignissimos esse sequi magnam quia ipsam voluptatum quam ipsum quisquam labore fuga totam nobis? Fugit dicta eligendi dolores.</p>
+    <br><br>
+    <button class="hide">Click me to hide</button>
+    <br><br>
+    <div class="one"></div>
+    <br><br>
+    <button class="show">Click me to show the div</button>
+    <br><br>
+    <div class="two">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, animi, numquam corporis alias autem similique eius itaque, velit voluptatem eligendi nesciunt. Corrupti voluptatum exercitationem sunt praesentium. Deserunt quo culpa sunt magnam, neque optio quas aliquid ipsam in corporis expedita dolorum ipsum quisquam inventore! Ipsam reiciendis molestiae dolore tenetur. Aut quibusdam, cumque accusamus molestiae consectetur rerum recusandae nostrum quas libero vel inventore temporibus, porro ullam quo cum, fugit error voluptatum velit! Eveniet iusto laborum rerum doloribus, molestias dolores ipsam accusantium ad, non nihil neque mollitia laboriosam nam nisi error ut. Corrupti inventore, quas nisi minus explicabo autem cumque accusamus beatae laborum.
+    </div>
+    <button class="toggle">toggle me</button>
+</body>
+</html>
+<script>
+    //hide
+    $(document).ready(function(){
+        $('.hide').click(function(){
+            $('p').hide(6);
+        })
+    })
+
+    //show
+    $(document).ready(function(){
+        $('.show').click(function(){
+            $('.one').show(5000);
+        })
+    })
+
+    //toggle
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.two').toggle(3000);
+        })
+    })
+</script>

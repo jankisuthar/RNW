@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 200px;
+            width: 200px;
+            background-color: deepskyblue;
+            margin: 200px;
+            transition-duration: 2s;
+            transition-delay: 1s;
+           
+        
+        }
+        .demo:hover{
+            transform: rotate(180deg);
+        }
+        .test{
+            height: 200px;
+            width: 200px;
+            background-color: darkorchid;
+            margin: 200px;
+            transition-duration: 2s;
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            transition-timing-function: ease-in-out;
+
+        }
+        .test:hover{
+            width:400px ;
+        }
+        input:focus{
+            background-color: yellowgreen;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+        button{
+            outline: none;
+            border: none;
+            padding: 10px;
+            background-color: lightgreen;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: 1s;
+            margin: 200px;
+        }
+        button:hover{
+            transform: scale(1.2);
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo"></div>
+    <br>
+    <br>
+    <div class="test"></div>
+    <br><br>
+    <input type="text" placeholder="Enter your name">
+    <br><br>
+    <button>Click me to change the CSS</button>
+</body>
+</html>

@@ -1,0 +1,5 @@
+axios.get()
+axios.post()
+axios.patch()
+axios.put()
+axios.delete()

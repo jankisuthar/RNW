@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        body {
+  background-color: #499f68;
+  color: #fff;
+  margin: 0 auto 0;
+  font-family: "Josefin Sans";
+}
+.container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content:center;
+  margin-top:3rem;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 1.5%;
+  font-size: 50px;
+  background-color: #f4f4f4;
+  color: #499f68;
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  vertical-align: middle;
+}
+
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="counter" data-countto="150" data-duration="8000">0</div>
+        <div class="counter" data-countto="85" data-duration="20000">0</div>
+        <div class="counter" data-countto="2200" data-duration="2000">0</div>
+      </div>
+</body>
+</html>
+<script>
+    $(".counter").each(function () {
+var $this = $(this),
+countTo = $this.attr("data-countto");
+countDuration = parseInt($this.attr("data-duration"));
+$({ counter: $this.text() }).animate(
+{
+  counter: countTo
+},
+{
+  duration: countDuration,
+  easing: "linear",
+  step: function () {
+    $this.text(Math.floor(this.counter));
+  },
+  complete: function () {
+    $this.text(this.counter);
+  }
+}
+);
+});
+</script>

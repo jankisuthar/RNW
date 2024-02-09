@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tags:
+    Form
+    input
+    label
+    textarea
+    select
+
+    Attributes : 
+    method
+    Name
+    enctype
+    action
+    placeholder
+    type
+    value -->
+    <form method="post" name="register form" enctype="multipart/form-data" action="01intro.html">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter Your Name" required>
+        <br>    <br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br>    <br>
+        <label>Password:</label>
+        <input type="password" name="pwd" placeholder="Enyter your password">
+        <br>    <br>
+        <label>Address:</label>
+        <textarea name="address" placeholder="Enter your address"></textarea>
+        <br>    <br>
+        <label>Photo:</label>
+        <input type="file" name="photo">
+        <br>    <br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br>    <br>
+        <label>Hobby:</label>
+        <input type="checkbox" name="hobby" value="cricket">Cricket
+        <input type="checkbox" name="hobby" value="ludo">Ludo
+        <input type="checkbox" name="hobby" value="chess">Chess
+        <br>    <br>
+        <label >Date:</label>
+        <input type="date" name="date">
+        <br>    <br>
+        <label>Country:</label>
+        <select name="Country">
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+            <option value="usa">USA</option>
+        </select>
+        <br>    <br>
+        <label>Mobile:</label>
+        <input type="number" name="mobile" placeholder="Enter your mobile number" min="0" max="10">
+        <br>    <br>
+        <input type="submit" name="submit" value="submit">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

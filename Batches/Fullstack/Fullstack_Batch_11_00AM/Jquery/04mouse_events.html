@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>Have a nice day!</h1>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //mouseover
+        // $('h1').mouseover(function(){
+        //     alert("you;ve hovered the element")
+        // })
+
+        //mouseenter
+        $('h1').mouseenter(function(){
+            alert("you've entered the element")
+        })
+
+        //mouseleave
+        $('h1').mouseleave(function(){
+            alert("bye! bye!")
+        })
+    })
+</script>

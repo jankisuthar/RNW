@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // JSON : JAvascript Object Notation
+    var student = {name:"John",age:23,profession:"Teacher"}
+    console.log(student);
+
+    let st = JSON.stringify(student)
+    console.log(st);
+
+    localStorage.setItem("StudentData",st)
+    let getData = localStorage.getItem("StudentData")
+    console.log(getData);
+    console.log(JSON.parse(getData)); 
+
+
+
+    let userData={job:"Programmer",
+                users : [
+                    {
+                        id:001,
+                        name:"john Doe"
+                    },
+                    {
+                        id:002,
+                        name:"Angella Cristan"
+                    }
+
+                ]}
+                console.log(userData);
+
+                //store the object into localstorage
+        localStorage.setItem("UserData",JSON.stringify(userData))
+
+         //Retrive the object from localstorage
+        let data =  localStorage.getItem("UserData")
+        console.log("AllUserdata",JSON.parse(data));
+
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="decdata">Decrement</button>
+    <h1 id="countvalue">0</h1>
+    <button id="incrementdata" >Increment</button>
+</body>
+</html>
+<script>
+   
+
+        let counter = 0;
+        let countValue = document.getElementById('countvalue');
+        let incButton = document.getElementById('incrementdata')
+        let decButton = document.getElementById('decdata')
+        console.log(countvalue);
+        console.log(incButton);
+       
+
+        //increment
+        incButton.addEventListener('click',function()
+        {
+            
+            counter++;
+            console.log(counter);
+            countValue.innerHTML = counter;
+        })
+
+        //decrement
+        decButton.addEventListener('click',function()
+        {
+            
+            counter--;
+            console.log(counter);
+            countValue.innerHTML = counter;
+        })
+
+</script>

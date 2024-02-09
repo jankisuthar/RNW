@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" onsubmit="validadata()">
+        <table border="1" align="center">
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Old Password:</td>
+                <td><input type="password" id="oldpwd"></td>
+            </tr>
+            <tr>
+                <td>New Password:</td>
+                <td><input type="password" id="newpwd"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    function validadata(){
+    let email = 'demo@gmail.com'
+    let pwd = 12345
+
+    let useremail = document.getElementById('email').value;
+    console.log(useremail);
+    let oldpwd = document.getElementById('oldpwd').value 
+
+    if(email==useremail  && pwd==oldpwd)
+    {
+        alert("Password Changed Successfully!")
+    }
+    else{
+        alert("Something went wrong!")
+    }
+}
+</script>

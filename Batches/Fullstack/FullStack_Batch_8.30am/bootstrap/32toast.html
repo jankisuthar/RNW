@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed   p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="img/favicon.jpg" class="rounded me-2" alt="..." height="50" width="50">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sunt architecto facere voluptate laborum dolor vel perferendis quo. Cumque impedit inventore excepturi et ratione necessitatibus quis dicta quibusdam corrupti praesentium ea quia quas, dolore debitis incidunt reiciendis quos! Placeat officiis quos consequuntur provident quae id nam adipisci. Dolore ex eaque obcaecati ad laborum dolorum! At provident, commodi, labore quas ullam, eligendi quia repellendus a cumque dolorum odio? Dolore nostrum enim repudiandae qui distinctio harum reiciendis perferendis quis alias numquam, ut magni provident ipsum facere nulla. Laboriosam repellat voluptate animi libero quibusdam explicabo nobis nisi, earum quia qui itaque quae voluptatibus vero, cumque, assumenda consequuntur tempore officia quod. Consequuntur, tenetur fugit earum atque, dolorum laborum temporibus similique ipsum ducimus ipsam soluta explicabo quibusdam amet molestias necessitatibus qui corporis voluptatibus vel ullam natus assumenda quisquam quia. Corporis voluptates ea earum quisquam sequi aut ipsum excepturi nesciunt dolore deserunt quibusdam, expedita at labore ab enim beatae fugiat quae velit aliquid tempora unde libero! Maiores velit placeat optio, cumque nam adipisci! Cum ipsa veritatis natus iste, illum corporis placeat cumque temporibus libero quae ea, repellat magni nobis quis pariatur earum quibusdam commodi suscipit incidunt? Nam at labore unde magnam eaque ex ut molestiae nemo!
+    </div>
+  </div>
+</div>
+    </div>
+</body>
+</html>
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+</script>

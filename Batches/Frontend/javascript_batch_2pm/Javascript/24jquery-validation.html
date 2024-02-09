@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+   <script src="bvalidator/jquery.bvalidator.min.js"></script>
+    <script src="bvalidator/themes/presenters/bValidator.DefaultPresenter.js"></script>
+    <script src="bvalidator/themes/gray/gray.js"></script>
+    <link rel="stylesheet" href="bvalidator/themes/gray/gray.css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('form').bValidator();
+            // alert("sdjfhfgh");
+        });
+    </script>
+</head>
+<body>
+    <form data-bvalidator-validate>
+        <br><br><br>
+        Email: <input type="text" data-bvalidator="required,email"/>
+        <input data-bvalidator="number,required" data-bvalidator-msg="Number please" type="text">
+        <!-- Url: <input type="text" data-bvalidator="url"/> -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

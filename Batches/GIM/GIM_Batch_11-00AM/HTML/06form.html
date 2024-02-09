@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="03List.html" enctype="" name="registerform">
+        <table border="1" align="center">
+            <caption><b>Register Form</b></caption>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" ></textarea></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby:</td>
+                <td><input type="checkbox" name="hobby" value="cricket">Cricket
+                    <input type="checkbox" name="hobby" value="ludo">Ludo
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><select name="country" >
+                    <option value="">India</option>
+                    <option value="">Canada</option>
+                    <option value="">USA</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Photo:</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+                <td>Number:</td>
+                <td><input type="number" name="number" max="5" min="1"></td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Time:</td>
+                <td><input type="time" name="time"></td>
+            </tr>
+            <tr>
+                <td>Mobile No:</td>
+                <td><input type="number" pattern="[0-9]"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Register">
+                    <button type="reset" name="reset">Reset</button>
+                    </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

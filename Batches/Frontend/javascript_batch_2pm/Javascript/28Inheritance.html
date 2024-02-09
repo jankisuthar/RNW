@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // Types of inhitance 
+    // 1). Prototypal Inheritance
+    // 2). Psudo-clasical Inheritance
+    // 3). Function Inheritance
+    class Parent{
+        constructor(name,surname)
+        {
+            this.name=name
+            this.surname=surname
+         
+        }
+        age(){
+            console.log("My age is 25");
+        }
+    }
+    class Child extends Parent
+    {
+        constructor(name,surname)
+        {
+            console.log("My name is "+name);
+            super(name,surname)
+            
+        }
+        
+    }
+    let ob = new Child("John","doe")
+    console.log(ob.name);
+    ob.age();
+</script>

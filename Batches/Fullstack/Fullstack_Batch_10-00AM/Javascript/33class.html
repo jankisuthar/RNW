@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // class : A JavaScript class is not an object.It is a template for JavaScript objects.
+
+    class Demo{
+        constructor()
+        {
+        console.log("This is demo class");
+        }
+    }
+    let obj = new Demo
+    
+
+    //class with para
+    class Person{
+        constructor(fname,lname,age)
+        {
+            this.fname = "John"
+            this.lname = "doe"
+            this.age = 52
+        }
+    }
+    let data = new Person()
+    console.log(data.fname);
+    console.log(data.lname);
+    console.log(data.age);
+
+
+    //another exa
+    class Customer{
+        constructor(name,age)
+        {
+            this.name = name
+            this.age = age
+        }
+    }
+    let newdata = new Customer("Jayesh",17)
+    console.log(newdata);
+    console.log(newdata.name);
+    console.log(newdata.age);
+</script>

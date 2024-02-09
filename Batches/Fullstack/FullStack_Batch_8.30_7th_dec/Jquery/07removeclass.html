@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        .test{
+            border: 10px solid;
+            border-radius: 50%;
+            box-shadow: 0px 0px 7px grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="test"></div>
+    <br><br>
+    <button>Click me to change the style</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        // $('button').click(function(){
+        //     $('div').removeClass('test')
+        // })
+
+         $('button').click(function(){
+            $('div').toggleClass('test')
+        })
+
+    })
+</script>

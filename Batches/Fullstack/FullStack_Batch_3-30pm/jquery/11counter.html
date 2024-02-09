@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <style>
+        .init{
+  padding-top: 100px;
+}
+.init span {
+  font-size: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h4 class="init">While you're reading this, the Sun has moved <span class="counter"> 1610 </span> kilometers around our galaxy (in the Orion's arm). Cool. Read it again.</h4>
+  </div>
+  
+    
+</body>
+</html>
+<script>
+    $('.counter').addClass('animated fadeInDownBig');
+
+$('.counter').counterUp({
+  delay: 10,
+  time: 800  //1000 = 1 second
+});
+  
+</script>

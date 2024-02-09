@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // closure : an inner function has acceess to use outer functions all the functionality
+
+    let x = 10;
+    function Outer(){
+        let y = 5
+         
+        function Inner(){ 
+           let z =5
+           let sum = x+=1
+            return sum
+        }
+        return Inner
+    }
+    const data = Outer();
+    console.log(data());
+    console.log(data());
+    console.log(data());
+
+</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color: blueviolet;
+            height: 500px;
+            display: flex;
+            align-content: stretch;
+
+        }
+        .sub{
+            background-color: aqua;
+            /* height: 100px; */
+            width: 100px;
+            margin: 20px;
+            font-size: 30px;
+            
+        }
+        #second
+        {
+            background-color: black;
+            height: 500px;
+            display: flex;
+        }
+        .item
+        {
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="sub" style="order: 3;">1</div>
+        <div class="sub" style="order: 5;align-self: center;">2</div>
+        <div class="sub" style="order: 1;flex-shrink: 0;">3</div>
+        <div class="sub" style="order: 6; align-self: center;">4</div>
+        <div class="sub" style="order: 2;flex-basis: 300px; align-self: center;">5</div>
+        <div class="sub" style="order: 4;">6</div>
+    </div>
+<br>
+    <div id="second">
+        <div class="item" style="flex-grow: 4;">1</div>
+        <div class="item" style="flex-grow: 1;">2</div>
+        <div class="item" style="flex-grow: 6;">3</div>
+        <div class="item" style="flex-grow: 1;">4</div>
+    </div>
+</body>
+</html>

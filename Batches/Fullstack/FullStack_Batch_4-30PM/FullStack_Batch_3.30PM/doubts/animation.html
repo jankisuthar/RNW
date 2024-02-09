@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            animation-name: test;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes test {
+            /* from{background-color: brown;}
+            to{background-color: chartreuse;} */
+            0%{background-color: brown;}
+            25%{background-color: chocolate;}
+            50%{background-color: cornflowerblue;}
+            75%{background-color: crimson;}
+            100%{background-color: darkcyan;}
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

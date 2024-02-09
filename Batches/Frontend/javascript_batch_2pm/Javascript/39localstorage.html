@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //setdata
+//    localStorage.setItem('name',"Red & White")
+    
+    //getdata
+    let getdata = localStorage.getItem('name')
+  
+
+    //removedata
+    let remove = localStorage.removeItem('name')
+    console.log(remove);
+
+
+    //cleardata
+    localStorage.clear()
+    console.log(getdata);
+
+
+    var Student = {name:"John",age : 25}
+    console.log(Student);
+    let st = JSON.stringify(Student)
+    
+    console.log(st);
+
+    localStorage.setItem("StudentData",st)
+    let getstudent = localStorage.getItem("StudentData")
+    console.log(JSON.parse(getstudent));
+
+
+    const userData = {
+  job: "Programmer",
+  skills: [
+    { id: 4200, name: "Angular" },
+    { id: 3000, name: "React" },
+    { id: 8080, name: "Vue" },
+  ],
+};
+
+// Store the object into storage
+localStorage.setItem("userData", JSON.stringify(userData));
+
+// Retrieve the object from the storage
+const data = localStorage.getItem("userData");
+console.log("data: ", JSON.parse(data));
+
+
+
+</script>

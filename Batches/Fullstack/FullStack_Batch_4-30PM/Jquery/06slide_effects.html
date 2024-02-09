@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus velit vel tempora suscipit? Illum sequi hic magnam autem consectetur, quos distinctio ratione quo commodi sed fuga cupiditate soluta suscipit tenetur ut corrupti, tempora sunt? Quisquam perferendis sunt nemo quidem maxime sed iure sint natus, quos nostrum veritatis nesciunt id temporibus corporis architecto culpa a, quas pariatur. Atque, quae aliquam placeat accusantium sequi perferendis. Sapiente iste praesentium voluptatem possimus soluta quibusdam nesciunt debitis dolores ipsam atque temporibus, dicta autem laboriosam adipisci fugiat numquam eum laudantium architecto delectus molestiae, voluptatum veniam. Non iure quo sunt, harum consequuntur voluptate obcaecati sit nobis?</div>
+    <button class="btn">slide out</button>
+    <div class="two" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magni libero fuga impedit quasi praesentium optio ducimus consectetur iusto, aliquid totam necessitatibus dicta illum aliquam. Similique est illo inventore debitis.</div>
+    <button class="btn2">slide out</button>
+    <br><br>
+    <button class="btn3">slide Toggle</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //slideup
+        $('.btn').click(function(){
+            $('.one').fadeOut(3000);
+        })
+
+        //slidedown
+        $('.btn2').click(function(){
+            $('.two').fadeIn(3000);
+        })
+
+        //slidetoggle
+        $('.btn3').click(function(){
+            $('.one').fadeToggle(3000);
+        })
+    })
+</script>

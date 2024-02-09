@@ -1,0 +1,16 @@
+@font-face {
+    font-family:newfont ;
+    src: url(Bisney.otf);
+}
+*{
+    font-family: newfont;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+h1{
+    text-align: center;
+    background-color: brown;
+}

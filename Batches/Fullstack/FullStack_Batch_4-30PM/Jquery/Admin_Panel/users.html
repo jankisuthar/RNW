@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/lg.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">
+            <img src="images/lg.jpg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <form class="d-flex ">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="icons d-flex justify-content-end align-items-center">
+            <i class="fa-regular fa-bell bell rounded-pill me-3"></i>
+            <img src="images/user.jpg" alt="user" class="rounded-pill">
+
+          </div>
+        
+        </div>
+    </nav>
+    <!-- hedaer end -->
+    
+    <!-- sidebar start -->
+    <div id="sidebar">
+      <ul>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+      </ul>
+  
+      <div id="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+    </div>
+    <!-- sidebar end -->
+
+    <!-- users start -->
+    <div class="container mt-5">
+        <table class="table table-responsive">
+            <th>Id</th>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Age</th>
+            <th>Update</th>
+            <th>Delete</th>
+           <tr>
+            <td>001</td>
+            <td><img src="images/user.jpg" alt="user" width="100"></td>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>123456</td>
+            <td>45</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+           </tr>
+           <tr>
+            <td>001</td>
+            <td><img src="images/user.jpg" alt="user" width="100"></td>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>123456</td>
+            <td>45</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+           </tr>
+           <tr>
+            <td>001</td>
+            <td><img src="images/user.jpg" alt="user" width="100"></td>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>123456</td>
+            <td>45</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+           </tr>
+           <tr>
+            <td>001</td>
+            <td><img src="images/user.jpg" alt="user" width="100"></td>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>123456</td>
+            <td>45</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+           </tr>
+           <tr>
+            <td>001</td>
+            <td><img src="images/user.jpg" alt="user" width="100"></td>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>123456</td>
+            <td>45</td>
+            <td><button class="btn btn-success">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
+           </tr>
+        </table>
+    </div>
+    <!-- users end -->
+     <!-- footer start -->
+<div class="container-fluid bg-dark text-white text-center pt-3 pb-3 mt-5">
+    <h3>CopyRight@2023 By RNW Multimedia PVT LTD</h3>
+</div>
+    <!-- footer end -->
+</body>
+</html>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+      // sidebar
+  $(document).ready(function() {
+  $('#sidebar-btn').on('click', function() {
+    $('#sidebar').toggleClass('visible');
+  });
+});
+</script>

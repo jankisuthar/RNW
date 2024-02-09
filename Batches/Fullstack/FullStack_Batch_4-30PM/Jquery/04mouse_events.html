@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <button class="clck">Click to double</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        //mouseover
+        $('.one').mouseover(function(){
+            $('.one').css({background:"red"});
+        })
+
+        //mouseout
+        $('.one').mouseout(function(){
+            $('.one').css({background:"black",border:"10px solid red"});
+        })
+    })
+
+    //dbclick
+    $(document).ready(function(){
+        $('.clck').dblclick(function(){
+            alert("You have clicked 2 times on button!");
+        })
+    })
+</script>

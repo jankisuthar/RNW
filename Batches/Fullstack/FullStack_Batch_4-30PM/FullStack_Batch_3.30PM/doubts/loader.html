@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            border: 15px solid grey;
+            border-top: 15px solid blueviolet;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: loader linear 2s infinite;
+        }
+        @keyframes loader {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
