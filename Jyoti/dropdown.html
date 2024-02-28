@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: brown;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+        }
+        nav li{
+            padding: 5px;
+        }
+        header nav > ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav .dropdown {
+           list-style: none;
+           position: absolute;
+           opacity: 0;
+           transition: all 0.5s linear;
+           top:60px;
+           
+        }
+        .submenu{
+            position: relative;
+        }
+        .submenu:hover .dropdown{
+            opacity: 1;
+            background-color: aqua;
+            
+        }
+      
+        
+    </style>
+</head>
+<body>
+   <header>
+        <nav>
+            <h2>logo</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="submenu">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">App</a></li>
+                        <li><a href="#">Ethical hacking</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+   </header>
+</body>
+</html>

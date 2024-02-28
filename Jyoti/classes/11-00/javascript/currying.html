@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested function , closure</title>
+</head>
+
+<body>
+    <script>
+        /// nested function 
+
+        // callback hell process
+        function add(value1) {
+            return function (value2) {
+                return function (value3) {
+                    return value1 + value2 + value3
+                }
+            }
+        }
+
+        /// nested function calling
+        const sum1 = add(8);
+        console.log("sum1 " + sum1)
+
+        const sum2 = sum1(2);
+        console.log("sum2 " + sum2)
+
+        const sum3 = sum2(1);
+        console.log("sum3 =" + sum3)
+        /// end nesting function calling
+
+
+
+        //// currying concept
+        const result = add(8)(2)(1)
+        console.log("sum = ", result);
+
+
+        ////// closure ////
+
+
+
+    </script>
+</body>
+
+</html>

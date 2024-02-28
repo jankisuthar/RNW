@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: red;
+            width: 300px;
+            aspect-ratio: 1;
+            animation-name: blink;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-iteration-count: infinite;
+            /* animation-play-state: running; by default */
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes blink {
+            from{
+                background-color: red;
+            }to {
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

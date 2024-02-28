@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // var -> global variable
+        var vOne;// decalaration
+        vOne = 34// assign or initalisation
+
+        var vTwo = 23;
+        console.log(vTwo);
+
+
+        //// override or re-assign
+        vTwo = 40;
+        console.log(vTwo);
+        vTwo = 50;
+        console.log(vTwo);
+
+
+        /// redeclaration
+        var vThree = 45;
+        console.log(vThree);
+        var vThree = 80;
+        console.log(vThree);
+
+
+        /// let and const --> block scope variable
+
+        // let ///
+        let letA = 12;
+        /// reassign possible
+        letA = 34;
+        console.log(letA)
+
+        /// redeclration no possible
+        // let letA = 89;
+
+        /// end let //
+
+
+        /// const ///
+        const one = 3.14;
+        one = 45;
+        /// no re-assign
+        console.log(one)
+        // no re-decalration
+        // const two = 34;
+        // const two = 50;
+
+
+
+    </script>
+</body>
+
+</html>

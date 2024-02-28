@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+
+        // hoisting
+        var data1 = "address2"
+        const obj = {
+            [data1]: "india"
+        }
+        // ?. --> chaining operator
+        console.log(obj?.address?.city)
+        console.log(obj?.address?.city ?? "no data")
+        // ?? --> nullish  : null or undefined
+        console.log("hello");
+
+        const obj2 = {
+            id: 123,
+            name: "web",
+            show: function () {
+                console.log(`name = ${obj2.name} , id = ${obj2.id}`)
+                console.log(`name = ${this.name} , id = ${this.id}`)
+            }
+        }
+
+
+
+        obj2.show()
+
+        const arr = [1, 2, 3, ...[4, 5, 6, 7, ...[5, 6, 7, 8, 7]]];
+        console.log(arr)
+
+
+        const arr2 = [1, 2, 3, [4, 5, 6, 7, [5, 6, 7, 8, 7]]];
+        console.log(arr2)
+        // const newArr = arr2.flat(1) / arr2.flat()
+        // const newArr = arr2.flat(2)
+        const newArr = arr2.flat(Infinity)
+        console.log(newArr)
+
+
+        /// currying
+
+        function add(a) {
+            return function (b) {
+                return function (c) {
+                    return a + b + c;
+                }
+            }
+        }
+
+        // const sum1 = add(7);
+        // const sum2 = sum1(10);
+        // const sum3 = sum2(2);
+        // console.log(sum3)
+
+        const sum = add(7)(10)(2)
+        console.log(sum)
+
+        const arr4 = [3, 4, 5];
+        const arr5 = [6, 7, 8];
+        console.log(arr4.concat(arr5));
+
+        console.log(arr4.join("-"))
+        console.log(arr4.join("/"))
+
+        const date = new Date();
+        const day = date.getDay();
+        const month = date.getMonth();
+        const year = date.getFullYear();
+
+        const months = ["jan", "feb", "march"]
+
+        console.log(`${day}/${month}/${year}`)
+        console.log([day, month, year].join("/"))
+        console.log([day, months[month], year].join("-"))
+    </script>
+</body>
+
+</html>

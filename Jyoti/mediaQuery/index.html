@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            margin: 5rem auto;
+        }
+
+        .container .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container .row .w-50 {
+            width: 50%;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container .row div:nth-child(1) {
+            padding: 2rem;
+        }
+
+
+
+        @media only screen and (max-width:768px) {
+            .container .row .w-50 {
+                width: 100%;
+
+            }
+
+            .container .row {
+                flex-direction: column-reverse;
+            }
+        }
+
+
+        /* @media only screen and (min-width:993px) and (max-width:1200px){
+            .container  {
+               color: red;
+
+            }
+        } */
+
+        @media (993px <=width <=1200px) {
+            .container {
+                color: red;
+
+            }
+        }
+
+        @media (768px <=width <=992px) {
+            .container {
+                color: green;
+
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- breakpoint -->
+    <!-- 1200px 1024px 992px, 768,576,280 -->
+    <div class="container">
+        <div class="row">
+            <div class="w-50">
+                <h1>web developement</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae accusamus eos unde atque quo
+                    blanditiis, natus ex veniam, magnam aliquid quaerat, tempore temporibus vel. Autem assumenda
+                    nesciunt veritatis dolorum?</p>
+            </div>
+            <div class="w-50">
+                <img src="https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-development.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

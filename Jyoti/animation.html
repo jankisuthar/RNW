@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            aspect-ratio: 1;
+            background-color: red;
+            animation-name: move;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 2;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes move {
+            from {
+                transform:translateY(0);
+            }
+            to {
+                transform: translateY(200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

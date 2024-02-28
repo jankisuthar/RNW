@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoisting</title>
+</head>
+
+<body>
+    <script>
+        // hoisting -> variable , function 
+
+        /// diff b/w not defined, undefined
+
+        /// variable hoisting
+        // const a;
+        // console.log(a);
+        // var a = 12;
+
+
+        // function hoisting 
+        show();
+
+        function show() {
+            console.log("show function")
+        }
+
+
+        /// error
+        // show2()
+        // var show2 = function () {
+        //     console.log("show function")
+        // }
+    </script>
+</body>
+
+</html>

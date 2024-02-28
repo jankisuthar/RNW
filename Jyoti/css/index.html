@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .row .w-25 {
+            width: 25%;
+        }
+
+        .row .w-25 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+/* 
+        @media only screen and (max-width:992px) {
+            .row .w-25 {
+                width: 33.33%;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .row .w-25 {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width:576px) {
+            .row .w-25 {
+                width: 100%;
+            }
+        } */
+
+
+
+        /* /// breakpoint */
+        @media only screen and (max-width:600px) {
+            .row .w-25 {
+            width: 100%;
+        }
+        }
+
+        @media only screen and (min-width:600px) {
+            .row .w-25 {
+            width: 100%;
+        }
+        }
+        @media only screen and (min-width:768px) {
+            .row .w-25 {
+            width: 50%;
+        }
+        }
+        @media only screen and (min-width:992px) {
+            .row .w-25 {
+            width: 33.33%;
+        }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <section class="row">
+        <div class="w-25">
+            <img src="1.jpg" alt="">
+        </div>
+        <div class="w-25">
+            <img src="2.jpg" alt="">
+        </div>
+        <div class="w-25">
+            <img src="3.jpg" alt="">
+        </div>
+        <div class="w-25">
+            <img src="4.jpg" alt="">
+        </div>
+        <div class="w-25">
+            <img src="4.jpg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .objFit img {
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .floatLeft {
+            float: left;
+        }
+        .floatRight {
+            float: right;
+        }
+        .clearBoth {
+            clear: both;
+        }
+
+        .ObjFloat .floatLeft,  .ObjFloat .floatRight{
+            width: 50%;
+        }
+
+        .ObjFloat img {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="objFit">
+        <img src="img1.jpg" alt="">
+    </section>
+    <section class="ObjFloat">
+        <div class="floatLeft">
+            <img src="img1.jpg" alt="">
+        </div>
+        <div class="floatRight">   
+            <h2>lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nam, iusto tempora fugit voluptatem sapiente a modi minus laudantium hic eum quaerat ducimus tenetur reprehenderit sint suscipit velit laborum delectus?</p>
+        </div>
+        <div class="clearBoth"></div>
+    </section>
+    <section class="ObjFloat">
+        <div class="floatLeft">
+            <img src="img1.jpg" alt="">
+        </div>
+        <div class="floatRight">
+            <h2>lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nam, iusto tempora fugit voluptatem sapiente a modi minus laudantium hic eum quaerat ducimus tenetur reprehenderit sint suscipit velit laborum delectus?</p>
+        </div>
+        <div class="clearBoth"></div>
+    </section>
+    
+</body>
+</html>

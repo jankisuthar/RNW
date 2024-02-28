@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box {
+            background-color: red;
+            width: 300px;
+            /* aspect-ratio: 1/1; width/height */
+            aspect-ratio: 1/1.1;
+            /* overflow: hidden; */
+        }
+
+        .box .inner {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            /* transition: 2s linear; */
+            /* transition: width 2s linear; */
+            transition: width 1s linear, height 0.5s 2s linear;
+
+        }
+
+        .box:hover .inner {
+            /* transform: scale(1.5); */
+            /* transform: rotate(90deg); */
+            width: 350px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+
+</html>
