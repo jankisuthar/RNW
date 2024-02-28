@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Student(std_name, std_age) {
+            this.std_name = std_name;
+            this.std_age = std_age;
+        }
+
+        Student.prototype.showStd = function(){
+            return `my name is ${this.std_name} and my age is ${this.std_age}`;
+        }
+
+        const std1 = new Student('jyoti2','23');
+        console.log(std1)
+        console.log(`my name is ${std1.std_name} and my age is ${std1.std_age}`)
+        console.log(std1.showStd())
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        title:
+        <input type="text" placeholder="enter title" name="title" id="title">
+        price
+        <input type="number" placeholder="enter price" name="price" id="price">
+        description
+        <input type="text" placeholder="enter des" name="description" id="description">
+        image
+        <input type="url" placeholder="url" name="img" id="img">
+        <input type="submit">
+    </form>
+    <%= info[0] %>
+        <script>
+
+            var addData = (Product) => {
+
+                fetch("/product/create", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(Product)
+
+                }).then((res) => {
+                   get();
+                })
+                setTimeout(() => {
+                       window.location.reload()
+                }, 1000)
+            }
+
+
+
+
+
+            document.querySelector("form").addEventListener("submit", (e) => {
+                e.preventDefault()
+                let Product = {
+                    title: document.getElementById("title").value,
+                    price: document.getElementById("price").value,
+                    description: document.getElementById("description").value,
+                    img: document.getElementById("img").value,
+
+                }
+                console.log(Product);
+                addData(Product)
+
+            })
+
+            const get = async () => {
+                let res = await fetch("/product/products")
+                let req = await res.json();
+                console.log("req", req)
+
+            }
+            get()
+
+        </script>
+</body>
+
+</html>

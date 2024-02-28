@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        async function hello(){
+            let pro = new Promise((resolve,reject)=>{
+            let a = 10;
+            let b = 15;
+
+            if(a < b)
+            {
+                resolve("a is greater value")
+            }
+            else{
+                reject("a is smaller value")
+            }
+             
+           })
+
+         try {
+            var value=await pro;
+           console.log(value);
+         } catch (error) {
+            console.log(error);
+         }
+        }
+hello()
+
+    </script>
+</body>
+</html>
